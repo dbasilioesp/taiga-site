@@ -4,8 +4,10 @@ console.log("show");
 
 <template>
   <div>
-    <p>Some defaulst layout content shared across all pages</p>
-    <slot />
+    <LayoutHeader />
+    <main class="main">
+      <slot />
+    </main>
   </div>
 </template>
 

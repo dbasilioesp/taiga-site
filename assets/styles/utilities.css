@@ -1,0 +1,38 @@
+.cbase {
+  width: 100%;
+  max-width: 1110px;
+  padding: 0 20px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+/* Colors */
+
+.white {
+  color: white;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+/* Shadows */
+
+.shadow-text {
+  text-shadow: var(--shadowText);
+}
+
+/* Text */
+
+.title-base {
+  font-size: 72px;
+}
+
+.text-base {
+  font-size: 20px;
+  font-weight: 400;
+}

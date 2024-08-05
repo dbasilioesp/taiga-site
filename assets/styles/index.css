@@ -1,6 +1,0 @@
-@layer reset, defaults, patterns, components, utilities, overrides;
-
-@import url("./reset.css") layer(reset);
-@import url("./base.css") layer(defaults);
-@import url("./components.css") layer(components);
-@import url("./utilities.css") layer(utilities);

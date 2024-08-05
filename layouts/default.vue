@@ -8,6 +8,7 @@ console.log("show");
     <main class="main">
       <slot />
     </main>
+    <LayoutFooter />
   </div>
 </template>
 

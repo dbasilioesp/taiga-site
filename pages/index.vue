@@ -4,6 +4,8 @@
   <div>
     <LayoutHomeBanner />
     <LayoutHomeSection1 />
+    <LayoutHomeSection2 />
+    <LayoutHomeEventos />
   </div>
 </template>
 

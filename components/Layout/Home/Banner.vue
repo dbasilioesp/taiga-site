@@ -2,7 +2,7 @@
 
 <template>
   <div class="banner">
-    <h1 class="banner__title">Taiga</h1>
+    <h1 class="banner__title text-7xl yellow font-bold">Taiga</h1>
     <p class="banner__desc">
       Somos uma livraria que procura inspirar a nova joventude, escolhendo
       títulos inovadores e que conversem com os novos tempos.
@@ -14,12 +14,7 @@
 .banner {
   padding-top: var(--headerHeight);
   height: clamp(300px, 65vh, 676px);
-  background-image: linear-gradient(
-      to right,
-      color(from var(--purple) srgb r g b / 0.8) 0%,
-      color(from var(--purple) srgb r g b / 0.8) 100%
-    ),
-    url("~/assets/images/home-banner.jpg");
+  background-image: var(--overlayPurple), url("~/assets/images/home-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -30,8 +25,6 @@
 }
 
 .banner__title {
-  font-size: 72px;
-  color: var(--yellow);
   text-shadow: var(--shadowText);
   margin-block-start: -60px;
   margin-block-end: 20px;

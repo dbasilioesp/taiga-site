@@ -4,19 +4,21 @@
   <div class="section">
     <section class="section__content">
       <div class="section__contentwrap">
-        <h2 class="title-base yellow shadow-text">Sobre nós</h2>
-        <p class="text-base white">
+        <h2 class="title-base text-7xl font-bold yellow shadow-text">
+          Sobre nós
+        </h2>
+        <p class="text-xl white">
           Criamos a livraria Taiga para ser ponto de encontro daqueles que
           gostam da literatura puxada para ficção, caminhando pelos Romances,
           pelas Fantasias e até aqueles são poucos conhecidos do tipo Horror.
         </p>
-        <p class="text-base white">
+        <p class="text-xl white">
           Além da literatura abraçamos as light novels no formato de mangás
           japoneses. Tendo títulos como Naruto, One Piece, Attack on Titan, que
           já são muito famosos, mas também titulos menos conhecidos como
           Mieroku-chan, Dorohedoro e Guntz.
         </p>
-        <p class="text-base white">
+        <p class="text-xl white">
           E nossa última essência está nos jogos de tabuleiro, principalmente os
           RPGs, onde procuramos trazer títulos como Ordem Paranormal e Tormenta
           20, e utensílios como dados de várias faces, livros de aventura e

@@ -9,9 +9,17 @@
   --orange: #f08037;
   --lilas: #7e72b3;
   --blue: #333b8e;
+  --darkgrey: #303030;
 
   /* Shadows */
   --shadowText: 0 -2px 44px rgba(0, 0, 0, 0.5);
+
+  /* Overlay */
+  --overlayPurple: linear-gradient(
+    to right,
+    color(from var(--purple) srgb r g b / 0.8) 0%,
+    color(from var(--purple) srgb r g b / 0.8) 100%
+  );
 }
 
 @font-face {

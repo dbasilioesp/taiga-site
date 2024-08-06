@@ -1,6 +1,10 @@
 <script setup>
-setPageLayout("home");
+// setPageLayout("home");
+definePageMeta({
+  layout: 'home'
+})
 </script>
+
 
 <template>
   <div>

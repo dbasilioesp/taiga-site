@@ -7,9 +7,9 @@ const props = defineProps({
 <template>
   <header class="header" :class="{ isHome: props.home }">
     <div class="header__wrap cbase">
-      <a href="/" class="header__logo">
+      <NuxtLink to="/" class="header__logo">
         <img src="~/assets/images/logo.png" alt="Logo" />
-      </a>
+      </NuxtLink>
       <nav class="header__nav">
         <NuxtLink to="/livros">Livros</NuxtLink>
         <NuxtLink to="/mangás">Mangás</NuxtLink>

@@ -3,7 +3,7 @@
     <h2 class="title-base text-5xl font-bold white">Contato</h2>
     <p class="text-base white text-center">
       Localização: Rua Gavião, 880 - Alvorada - RS.<br />
-      Telefone: 51 98484.16686
+      Telefone: 51 98484.1686
     </p>
   </footer>
 </template>

@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+setPageLayout("home");
+</script>
 
 <template>
   <div>

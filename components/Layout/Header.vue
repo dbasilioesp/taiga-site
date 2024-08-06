@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+const props = defineProps({
+  home: Boolean,
+});
+</script>
 
 <template>
-  <header class="header">
+  <header class="header" :class="{ isHome: props.home }">
     <div class="header__wrap cbase">
       <a href="/" class="header__logo">
         <img src="~/assets/images/logo.png" alt="Logo" />
@@ -22,6 +26,10 @@
 .header {
   width: 100%;
   height: var(--headerHeight);
+  background-color: var(--darkgrey);
+}
+
+.header.isHome {
   position: absolute;
   top: 0;
   background-color: rgba(33, 33, 33, 0.3);

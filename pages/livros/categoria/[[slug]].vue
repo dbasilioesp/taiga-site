@@ -1,6 +1,6 @@
 <script setup>
 const filteredBooks = computed(() => {
-  return books.filter((i) => i.Imagem);
+  return books.filter((i) => i.imagem);
 });
 </script>
 
@@ -12,10 +12,10 @@ const filteredBooks = computed(() => {
       <div class="page__grid">
         <UIBookCard
           v-for="book in filteredBooks"
-          :key="book.Nome"
-          :title="book.Nome"
-          :author="book.Autores"
-          :image="book.Imagem"
+          :key="book.nome"
+          :title="book.nome"
+          :author="book.autores"
+          :image="book.imagem"
         />
       </div>
     </div>

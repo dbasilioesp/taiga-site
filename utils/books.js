@@ -2,87 +2,103 @@ export const books = [
   {
     Nome: "Tipo uma história de amor",
     Autores: "Abdi Nazemian",
+    Imagem: "images/TipoUmaHistoriaDeAmor.jpg",
   },
   {
     Nome: "O último ancestral",
     Autores: "Ale Santos",
-  },
-  {
-    Nome: "O cortiço",
-    Autores: "Aluísio azevedo",
+    Imagem: "images/OUltimoAncestral.jpg",
   },
   {
     Nome: "Roxo",
     Autores: "Andréa Berriell",
-    Imagem: "/images/Roxo.jpeg"
+    Imagem: "/images/Roxo.jpeg",
   },
   {
     Nome: "A liberdade é uma luta constante",
     Autores: "Angela Davis",
+    Imagem: "/images/A liberdade é uma luta constante.jpg",
   },
   {
     Nome: "Mulheres, cultura e política",
     Autores: "Angela Davis",
+    Imagem: "/images/Mulheres, cultura e política.jpg",
   },
   {
     Nome: "O sentido da liberdade",
     Autores: "Angela Davis",
+    Imagem: "/images/O sentido da liberdade.png",
   },
   {
     Nome: "O pequeno príncipe",
     Autores: "Antoine de saint-exupéry",
+    Imagem: "/images/O pequeno príncipe.jpg",
   },
   {
     Nome: "Drácula",
     Autores: "Bram Stoker",
+    Imagem: "/images/Dracula.png",
   },
   {
     Nome: "As aventuras de pinóquio",
     Autores: "Carlo Collodi",
+    Imagem: "/images/As aventuras de pinóquio.png",
   },
   {
     Nome: "O escravo",
     Autores: "Carolina Maria de Jesus",
+    Imagem: "/images/O escravo.jpg",
   },
   {
     Nome: "Vermelho, branco e sangue azul",
     Autores: "Casey McQuiston",
+    Imagem: "/images/Vermelho, branco e sangue azul.jpg",
   },
   {
-    Nome: "O código Da Vinci",
+    Nome: "O Código Da Vinci",
     Autores: "Dan Brown",
+    Imagem: "/images/O Código Da Vinci.jpg",
   },
   {
     Nome: "A floresta",
     Autores: "Daniel Gruber",
+    Imagem: "/images/AFloresta.jpeg",
   },
   {
     Nome: "A noite do cordeiro",
     Autores: "Daniel Gruber",
+    Imagem: "/images/ANoiteDoCordeiro.jpeg",
   },
   {
     Nome: "O novo horror",
     Autores: "Daniel Gruber, Irka Barrios",
+    Imagem: "/images/NovoHorror.jpeg",
   },
   {
     Nome: "Colonialismo digital",
     Autores: "Deivison Faustino, Walter Lippold",
+    Imagem: "/images/Colonialismo digital.webp",
   },
   {
     Nome: "O pequeno manual antirracista",
     Autores: "Djamila Ribeiro",
+    Imagem: "/images/O pequeno manual antirracista.jpg",
   },
   {
     Nome: "A Vida, o Universo e Tudo Mais - Mochileiro das Galáxias - Vol. 3",
     Autores: "Douglas Adams",
+    Imagem:
+      "/images/A Vida, o Universo e Tudo Mais - Mochileiro das Galáxias - Vol. 3.jpg",
   },
   {
-    Nome: "Até mais, e obrigado pelos peixes! - Vol. 4 ",
+    Nome: "Até mais, e obrigado pelos peixes! - Vol. 4",
     Autores: "Douglas Adams",
+    Imagem: "/images/Até mais, e obrigado pelos peixes! - Vol. 4.jpg",
   },
   {
     Nome: "O guia do mochileiro das galáxias",
     Autores: "Douglas adams",
+    Imagem: "/images/O guia do mochileiro das galáxias.jpg",
   },
   {
     Nome: "Praticamente Inofensiva",
@@ -223,10 +239,10 @@ export const books = [
   {
     Nome: "Um caso sem futuro",
     Autores: "Júlia Maizman",
-    Imagem: "/images/UmCasoSemFuturo.png"
+    Imagem: "/images/UmCasoSemFuturo.png",
   },
   {
-    Nome: "A rede de alice",
+    Nome: "A rede de Alice",
     Autores: "Kate Quinn",
   },
   {
@@ -304,7 +320,7 @@ export const books = [
   {
     Nome: "A herença dos fantasmas",
     Autores: "Rivers Solomon",
-    Imagem: "/images/AHerançaDosFantasmas.png"
+    Imagem: "/images/AHerançaDosFantasmas.png",
   },
   {
     Nome: "A pequena caixa de gwendy",

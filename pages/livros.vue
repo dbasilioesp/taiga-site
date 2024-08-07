@@ -29,6 +29,7 @@ const filteredBooks = computed(() => {
 
 .page__grid {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 

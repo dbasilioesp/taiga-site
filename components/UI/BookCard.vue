@@ -16,20 +16,22 @@ const props = defineProps({
 
 <style scoped>
 .card {
+  max-width: 200px;
 }
 
 .card__image {
-    width: 200px;
-    height: 250px;
-    object-fit: contain;
-    border-radius: 4px;
+  width: 200px;
+  height: 250px;
+  object-fit: contain;
+  object-position: left;
+  border-radius: 4px;
 }
 
 .card__title {
-    margin-top: 10px;
-    margin-bottom: 2px;
-    font-size: 20px;
-    font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .card__author {

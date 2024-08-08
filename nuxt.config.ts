@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', "@nuxt/content"],
+  postcss: {},
   tailwindcss: {
     exposeConfig: true,
     viewer: true,

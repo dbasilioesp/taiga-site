@@ -4,15 +4,16 @@ const props = defineProps({
   author: String,
   image: String,
   light: Boolean,
+  link: String
 });
 </script>
 
 <template>
-  <div class="card" :class="{ light }">
+  <NuxtLink class="card" :class="{ light }" :to="props.link">
     <img class="card__image" :src="props.image" alt="" />
     <h2 class="card__title">{{ props.title }}</h2>
     <span class="card__author font-semibold">{{ props.author }}</span>
-  </div>
+  </NuxtLink>
 </template>
 
 <style scoped>

@@ -1,13 +1,15 @@
 <script setup>
+const route = useRoute();
+
 const filteredBooks = computed(() => {
-  return books.filter((i) => i.imagem);
+  return books.filter((i) => i.imagem && i.tags?.includes(route.params.slug));
 });
 </script>
 
 <template>
   <div class="page">
     <div class="cbase">
-      <h1 class="page__title text-7xl font-bold orange">Livros</h1>
+      <h1 class="page__title text-7xl font-bold orange capitalize">{{  route.params.slug }}</h1>
 
       <div class="page__grid">
         <UIBookCard

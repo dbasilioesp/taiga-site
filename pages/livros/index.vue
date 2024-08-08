@@ -12,8 +12,11 @@ const categories = [
 </script>
 
 <template>
-  <div class="page">
+  <div class="page pt-9">
     <div class="cbase">
+      <div>
+        <NuxtLink to="/" class="font-medium">Home</NuxtLink> &gt; <NuxtLink to="/livros" class="font-bold">Livros</NuxtLink>
+      </div>
       <h1 class="text-7xl orange font-bold mb-8">Livros</h1>
 
       <div class="colorbox">
@@ -27,6 +30,7 @@ const categories = [
             :title="book.nome"
             :author="book.autores"
             :image="book.imagem"
+            :link="`/livros/${book.slug}`"
           />
         </div>
       </div>

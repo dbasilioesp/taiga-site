@@ -60,8 +60,12 @@
 
 .section__picture {
   display: grid;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   padding: 80px;
+}
+
+.section__picture img {
+  height: 600px;
 }
 </style>

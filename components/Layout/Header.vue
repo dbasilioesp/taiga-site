@@ -13,7 +13,7 @@ const props = defineProps({
       </NuxtLink>
       <nav class="header__nav">
         <NuxtLink to="/livros">Livros</NuxtLink>
-        <NuxtLink to="/mangás">Mangás</NuxtLink>
+        <NuxtLink to="/mangas">Mangás</NuxtLink>
         <NuxtLink to="/rpgs">RPGs</NuxtLink>
         <NuxtLink to="/eventos">Eventos</NuxtLink>
         <NuxtLink to="/blog">Blog</NuxtLink>

@@ -4,26 +4,41 @@ const recommendations = computed(() => {
 });
 
 const categories = [
-  { title: "Fantasia", link: "/livros/categoria/fantasia", color: "var(--orange)" },
-  { title: "Horror", link: "/livros/categoria/horror", color: "var(--darkgrey)" },
-  { title: "Romance", link: "/livros/categoria/romance", color: "var(--lilas)" },
+  {
+    title: "Fantasia",
+    link: "/livros/categoria/fantasia",
+    color: "var(--orange)",
+  },
+  {
+    title: "Horror",
+    link: "/livros/categoria/horror",
+    color: "var(--darkgrey)",
+  },
+  {
+    title: "Romance",
+    link: "/livros/categoria/romance",
+    color: "var(--lilas)",
+  },
   { title: "Social", link: "/livros/categoria/social", color: "var(--yellow)" },
 ];
 </script>
 
 <template>
-  <div class="page pt-9">
+  <div class="page py-9">
     <div class="cbase">
       <div>
-        <NuxtLink to="/" class="font-medium">Home</NuxtLink> &gt; <NuxtLink to="/livros" class="font-bold">Livros</NuxtLink>
+        <NuxtLink to="/" class="font-medium">Home</NuxtLink> &gt;
+        <NuxtLink to="/livros" class="font-bold">Livros</NuxtLink>
       </div>
       <h1 class="text-7xl orange font-bold mb-8">Livros</h1>
 
-      <div class="colorbox">
-        <h2 class="colorbox__title text-4xl white font-bold mb-8 uppercase">
+      <div class="colorbox recommendation">
+        <h2
+          class="recommendation__title text-4xl white font-bold mb-8 uppercase"
+        >
           Recomendamos
         </h2>
-        <div class="colorbox__grid">
+        <div class="recommendation__grid">
           <UIBookCard
             v-for="book in recommendations"
             :key="book.nome"
@@ -54,23 +69,15 @@ const categories = [
 
 <style scoped>
 .page {
-  padding: 80px;
 }
 
-.colorbox {
-  background-color: var(--orange);
-  border-radius: 6px;
-  padding: 30px 40px;
-  width: 100%;
-}
-
-.colorbox__title {
+.recommendation__title {
   letter-spacing: 1px;
   text-decoration: underline;
   text-underline-offset: 10px;
 }
 
-.colorbox__grid {
+.recommendation__grid {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;

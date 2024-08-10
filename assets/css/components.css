@@ -21,8 +21,20 @@
   background-color: var(--orange);
 }
 
-/* Content */
+/* Box */
 
-.blog-content p {
-  margin-bottom: 20px;
+.colorbox {
+  background-color: var(--orange);
+  border-radius: 6px;
+  padding: 30px 40px;
+  width: 100%;
+}
+
+
+/* Grids */
+
+.base-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }

@@ -1,3 +1,3 @@
 <template>
-  <h1>RPGs</h1>
+  <div>eventos</div>
 </template>

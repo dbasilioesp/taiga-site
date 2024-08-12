@@ -3,6 +3,10 @@ const recommendations = computed(() => {
   return books.filter((i) => i.imagem && i.recomendamos);
 });
 
+const breads = [
+  { link: "/livros", label: "Livros" },
+];
+
 const categories = [
   {
     title: "Fantasia",
@@ -26,18 +30,17 @@ const categories = [
 <template>
   <div class="page py-9">
     <div class="cbase">
-      <div>
-        <NuxtLink to="/" class="font-medium">Home</NuxtLink> &gt;
-        <NuxtLink to="/livros" class="font-bold">Livros</NuxtLink>
-      </div>
-      <h1 class="text-7xl orange font-bold mb-8">Livros</h1>
-
+      <UIBreadcrumbs :items="breads" />
+      
+      <h1 class="text-7xl orange font-bold mb-6">Livros</h1>
+      
       <div class="colorbox recommendation">
         <h2
-          class="recommendation__title text-4xl white font-bold mb-8 uppercase"
+          class="recommendation__title text-4xl white font-bold mb-6 uppercase"
         >
           Recomendamos
         </h2>
+        <p class="mb-8 text-lg white">Quatro livros que gostariamos que nossos clientes lessem.</p>
         <div class="recommendation__grid">
           <UIBookCard
             v-for="book in recommendations"
@@ -50,8 +53,8 @@ const categories = [
         </div>
       </div>
 
-      <h2 class="text-4xl orange font-bold mb-8 uppercase mt-10">Categorias</h2>
-
+      <h2 class="text-4xl orange font-bold mb-2 uppercase mt-10">Categorias</h2>
+      <p class="mb-8 text-lg font-medium">Selecione a categoria que mais gosta:</p>
       <div class="categories">
         <NuxtLink
           v-for="category in categories"
@@ -103,6 +106,6 @@ const categories = [
 }
 
 .categories__card:hover {
-  filter: brightness(1.5);
+  filter: brightness(1.3);
 }
 </style>

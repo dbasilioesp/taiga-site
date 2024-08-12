@@ -2,11 +2,11 @@ export const books = [
   {
     nome: "Tipo uma história de amor",
     autores: "Abdi Nazemian",
-    imagem: "/images/TipoUmaHistoriaDeAmor.jpg",
+    imagem: "/images/livros/TipoUmaHistoriaDeAmor.jpg",
     recomendamos: true,
     tags: ["romance", "cultura", "estrangeiro"],
     editora: "HarperCollins",
-    slug: 'tipo-uma-historia-de-amor',
+    slug: "tipo-uma-historia-de-amor",
     descricao: `
       <p class="font-bold">Um romance LGBTQIAPN+ que mergulha na cultura iraniana enquanto explora os desafios de ser um adolescente gay nos anos 1980 e a luta contra o preconceito.</p>
       <p>Em 1989, o jovem iraniano Reza se muda para Nova York com a mãe para morar com seu padrasto e o filho dele. Apesar de nunca ter contado para ninguém, Reza sabe há muito tempo que é gay. Porém, tudo o que vê na televisão sobre a pandemia da aids e a comunidade queer reforça seu medo de que própria orientação sexual esteja ligada a algo terrível. Logo, ele decide esconder a verdade para se proteger das possíveis críticas da sua cultura e de sua mãe. </p>
@@ -17,105 +17,105 @@ export const books = [
   {
     nome: "O último ancestral",
     autores: "Ale Santos",
-    imagem: "/images/OUltimoAncestral.jpg",
+    imagem: "/images/livros/OUltimoAncestral.jpg",
     tags: ["romance", "afrofuturismo", "ficção"],
     recomendamos: true,
     editora: "HarperCollins",
-    slug: 'ale-santos',
-    descricao: ''
+    slug: "ale-santos",
+    descricao: "",
   },
   {
     nome: "Roxo",
     autores: "Andréa Berriell",
-    imagem: "/images/Roxo.jpeg",
+    imagem: "/images/livros/Roxo.jpeg",
     recomendamos: true,
   },
   {
     nome: "A liberdade é uma luta constante",
     autores: "Angela Davis",
-    imagem: "/images/A liberdade é uma luta constante.jpg",
+    imagem: "/images/livros/A liberdade é uma luta constante.jpg",
     recomendamos: true,
   },
   {
     nome: "Mulheres, cultura e política",
     autores: "Angela Davis",
-    imagem: "/images/Mulheres, cultura e política.jpg",
+    imagem: "/images/livros/Mulheres, cultura e política.jpg",
   },
   {
     nome: "O sentido da liberdade",
     autores: "Angela Davis",
-    imagem: "/images/O sentido da liberdade.png",
+    imagem: "/images/livros/O sentido da liberdade.png",
   },
   {
     nome: "O pequeno príncipe",
     autores: "Antoine de saint-exupéry",
-    imagem: "/images/O pequeno príncipe.jpg",
+    imagem: "/images/livros/O pequeno príncipe.jpg",
   },
   {
     nome: "Drácula",
     autores: "Bram Stoker",
-    imagem: "/images/Dracula.png",
+    imagem: "/images/livros/Dracula.png",
   },
   {
     nome: "As aventuras de pinóquio",
     autores: "Carlo Collodi",
-    imagem: "/images/As aventuras de pinóquio.png",
+    imagem: "/images/livros/As aventuras de pinóquio.png",
   },
   {
     nome: "O escravo",
     autores: "Carolina Maria de Jesus",
-    imagem: "/images/O escravo.jpg",
+    imagem: "/images/livros/O escravo.jpg",
   },
   {
     nome: "Vermelho, branco e sangue azul",
     autores: "Casey McQuiston",
-    imagem: "/images/Vermelho, branco e sangue azul.jpg",
+    imagem: "/images/livros/Vermelho, branco e sangue azul.jpg",
   },
   {
     nome: "O Código Da Vinci",
     autores: "Dan Brown",
-    imagem: "/images/O Código Da Vinci.jpg",
+    imagem: "/images/livros/O Código Da Vinci.jpg",
   },
   {
     nome: "A floresta",
     autores: "Daniel Gruber",
-    imagem: "/images/AFloresta.jpeg",
+    imagem: "/images/livros/AFloresta.jpeg",
   },
   {
     nome: "A noite do cordeiro",
     autores: "Daniel Gruber",
-    imagem: "/images/ANoiteDoCordeiro.jpeg",
+    imagem: "/images/livros/ANoiteDoCordeiro.jpeg",
   },
   {
     nome: "O novo horror",
     autores: "Daniel Gruber, Irka Barrios",
-    imagem: "/images/NovoHorror.jpeg",
+    imagem: "/images/livros/NovoHorror.jpeg",
   },
   {
     nome: "Colonialismo digital",
     autores: "Deivison Faustino, Walter Lippold",
-    imagem: "/images/Colonialismo digital.webp",
+    imagem: "/images/livros/Colonialismo digital.webp",
   },
   {
     nome: "O pequeno manual antirracista",
     autores: "Djamila Ribeiro",
-    imagem: "/images/O pequeno manual antirracista.jpg",
+    imagem: "/images/livros/O pequeno manual antirracista.jpg",
   },
   {
     nome: "A Vida, o Universo e Tudo Mais - Mochileiro das Galáxias - Vol. 3",
     autores: "Douglas Adams",
     imagem:
-      "/images/A Vida, o Universo e Tudo Mais - Mochileiro das Galáxias - Vol. 3.jpg",
+      "/images/livros/A Vida, o Universo e Tudo Mais - Mochileiro das Galáxias - Vol. 3.jpg",
   },
   {
     nome: "Até mais, e obrigado pelos peixes! - Vol. 4",
     autores: "Douglas Adams",
-    imagem: "/images/Até mais, e obrigado pelos peixes! - Vol. 4.jpg",
+    imagem: "/images/livros/Até mais, e obrigado pelos peixes! - Vol. 4.jpg",
   },
   {
     nome: "O guia do mochileiro das galáxias",
     autores: "Douglas adams",
-    imagem: "/images/O guia do mochileiro das galáxias.jpg",
+    imagem: "/images/livros/O guia do mochileiro das galáxias.jpg",
   },
   {
     nome: "Praticamente Inofensiva",
@@ -256,7 +256,7 @@ export const books = [
   {
     nome: "Um caso sem futuro",
     autores: "Júlia Maizman",
-    imagem: "/images/UmCasoSemFuturo.png",
+    imagem: "/images/livros/UmCasoSemFuturo.png",
   },
   {
     nome: "A rede de Alice",
@@ -337,7 +337,7 @@ export const books = [
   {
     nome: "A herença dos fantasmas",
     autores: "Rivers Solomon",
-    imagem: "/images/AHerançaDosFantasmas.png",
+    imagem: "/images/livros/AHerançaDosFantasmas.png",
   },
   {
     nome: "A pequena caixa de gwendy",

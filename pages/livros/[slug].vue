@@ -1,18 +1,18 @@
 <script setup>
 const route = useRoute();
 const book = books.find((i) => i.slug == route.params.slug);
+
+const breads = [
+  { link: "/livros", label: "Livros" },
+  { link: `/livros/${route.params.slug}`, label: book.nome }
+];
 </script>
 
 <template>
   <div class="page pt-10 pb-14">
     <div class="cbase">
-      <div>
-        <NuxtLink to="/" class="font-medium">Home</NuxtLink> &gt;
-        <NuxtLink to="/livros" class="font-medium">Livros</NuxtLink> &gt;
-        <NuxtLink :to="`/livros/${route.params.slug}`" class="font-bold">{{
-          book.nome
-        }}</NuxtLink>
-      </div>
+      <UIBreadcrumbs :items="breads" />
+
       <h1 class="page__title text-5xl pt-4 pb-6 font-bold orange capitalize">
         {{ book.nome }}
       </h1>

@@ -1,20 +1,17 @@
 <script setup>
-const breads = [{ link: "/mangas", label: "Mangás" }];
+const breads = [{ link: "/rpgs", label: "RPGs" }];
 </script>
 
 <template>
   <div class="page py-9">
     <div class="cbase">
       <UIBreadcrumbs :items="breads" />
-
-      <h1 class="text-7xl orange font-bold mb-4">Mangás</h1>
-      <p class="mb-8 text-lg">
-        Muitos dos mangás que temos são Shonnen, mas aos poucos vamos equilibrar
-        com outros genêros.
-      </p>
+      
+      <h1 class="text-7xl orange font-bold mb-8">RPGs</h1>
+      
       <div class="base-grid">
         <UIBookCard
-          v-for="item in mangas"
+          v-for="item in rpgs"
           :key="item.nome"
           :title="item.nome"
           :author="item.autores"

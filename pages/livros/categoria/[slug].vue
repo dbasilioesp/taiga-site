@@ -1,6 +1,11 @@
 <script setup>
 const route = useRoute();
 
+const breads = [
+  { link: "/livros", label: "Livros" },
+  { link: `/livros/categoria/${route.params.slug}`, label: route.params.slug },
+];
+
 const filteredBooks = computed(() => {
   return books.filter((i) => i.imagem && i.tags?.includes(route.params.slug));
 });
@@ -9,7 +14,11 @@ const filteredBooks = computed(() => {
 <template>
   <div class="page">
     <div class="cbase">
-      <h1 class="page__title text-7xl font-bold orange capitalize">{{  route.params.slug }}</h1>
+      <UIBreadcrumbs :items="breads" />
+
+      <h1 class="page__title text-7xl font-bold orange capitalize">
+        {{ route.params.slug }}
+      </h1>
 
       <div class="base-grid">
         <UIBookCard

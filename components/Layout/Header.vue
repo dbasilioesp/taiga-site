@@ -12,12 +12,10 @@ const props = defineProps({
         <img src="~/assets/images/logo.png" alt="Logo" />
       </NuxtLink>
       <nav class="header__nav">
+        <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/livros">Livros</NuxtLink>
         <NuxtLink to="/mangas">Mangás</NuxtLink>
         <NuxtLink to="/rpgs">RPGs</NuxtLink>
-        <NuxtLink to="/eventos">Eventos</NuxtLink>
-        <NuxtLink to="/blog">Blog</NuxtLink>
-        <NuxtLink to="/contato">Contato</NuxtLink>
       </nav>
     </div>
   </header>

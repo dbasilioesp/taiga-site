@@ -2,7 +2,7 @@ export const mangas = [
   {
     nome: "Frieren",
     autores: "",
-    imagem: "/images/frieren.jpeg",
+    imagem: "/images/mangas/frieren.jpeg",
     recomendamos: true,
     tags: ["fantasia"],
     editora: "",
@@ -12,7 +12,7 @@ export const mangas = [
   {
     nome: "Boruto",
     autores: "",
-    imagem: "/images/boruto.jpg",
+    imagem: "/images/mangas/boruto.jpg",
     tags: ["shonnen", "fantasia"],
     recomendamos: true,
     editora: "",

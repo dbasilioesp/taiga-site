@@ -13,7 +13,7 @@
 <style scoped>
 .banner {
   padding-top: var(--headerHeight);
-  height: clamp(300px, 65vh, 676px);
+  height: max(400px, 40vw);
   background-image: var(--overlayPurple), url("~/assets/images/home-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;

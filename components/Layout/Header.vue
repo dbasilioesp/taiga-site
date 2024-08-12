@@ -1,8 +1,9 @@
 <script setup>
-const route = useRoute();
 const props = defineProps({
   home: Boolean,
 });
+
+const active = ref(false);
 </script>
 
 <template>
@@ -11,7 +12,13 @@ const props = defineProps({
       <NuxtLink to="/" class="header__logo">
         <img src="~/assets/images/logo.png" alt="Logo" />
       </NuxtLink>
-      <nav class="header__nav">
+      <button type="button" @click="active = true" class="header__buttonnav">
+        <IconMenu />
+      </button>
+      <button type="button" @click="active = false" class="header__closenav">
+        <IconClose />
+      </button>
+      <nav class="header__nav" :class="{ active }">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/livros">Livros</NuxtLink>
         <NuxtLink to="/mangas">Mangás</NuxtLink>
@@ -36,8 +43,9 @@ const props = defineProps({
 
 .header__wrap {
   display: flex;
-  gap: 80px;
+  gap: 40px;
   align-items: center;
+  justify-content: center;
   height: 100%;
 }
 
@@ -75,5 +83,32 @@ const props = defineProps({
 
 .header__nav a:hover:before {
   width: 100%;
+}
+
+.header__buttonnav {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .header__wrap {
+    justify-content: space-between;
+  }
+
+  .header__nav {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: var(--purple);
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    translate: 100%;
+    transition: translate 0.5s ease;
+  }
+
+  .header__nav.active {
+    translate: 0;
+  }
 }
 </style>

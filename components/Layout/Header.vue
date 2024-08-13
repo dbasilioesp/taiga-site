@@ -4,6 +4,17 @@ const props = defineProps({
 });
 
 const active = ref(false);
+const nav = ref();
+
+onMounted(() => {
+  if (nav.value) {
+    const links = nav.value.querySelectorAll("a");
+    links.forEach((link) => {
+      console.log(link);
+      link.addEventListener("click", () => (active.value = false));
+    });
+  }
+});
 </script>
 
 <template>
@@ -12,10 +23,14 @@ const active = ref(false);
       <NuxtLink to="/" class="header__logo">
         <img src="~/assets/images/logo.png" alt="Logo" />
       </NuxtLink>
-      <button type="button" @click="active = true" class="header__buttonnav white">
+      <button
+        type="button"
+        @click="active = true"
+        class="header__buttonnav white"
+      >
         <IconMenu />
       </button>
-      <nav class="header__nav" :class="{ active }">
+      <nav class="header__nav" :class="{ active }" ref="nav">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/livros">Livros</NuxtLink>
         <NuxtLink to="/mangas">Mangás</NuxtLink>
@@ -89,7 +104,6 @@ const active = ref(false);
   width: 100%;
 }
 
-
 .header__buttonnav,
 .header__closenav {
   display: none;
@@ -115,6 +129,10 @@ const active = ref(false);
 
   .header__nav.active {
     translate: 0;
+  }
+
+  .header__nav a {
+    font-size: 40px;
   }
 
   .header__buttonnav {

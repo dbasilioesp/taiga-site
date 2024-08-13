@@ -24,7 +24,7 @@
           20, e utensílios como dados de várias faces, livros de aventura e
           miniaturas.
         </p>
-        <NuxtLink class="button-primary" to="/livros">Veja mais</NuxtLink>
+        <!-- <NuxtLink class="button-primary" to="/livros">Veja mais</NuxtLink> -->
       </div>
     </section>
     <div class="sectionA__picture">
@@ -34,7 +34,7 @@
 </template>
 
 <style scoped>
-.section {
+.sectionA {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
@@ -69,7 +69,7 @@
   height: 600px;
 }
 
-@container (width < 600px) {
+@media (max-width: 600px) {
   .sectionA {
     grid-template-columns: 1fr;
   }

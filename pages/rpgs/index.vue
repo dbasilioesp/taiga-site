@@ -6,9 +6,9 @@ const breads = [{ link: "/rpgs", label: "RPGs" }];
   <div class="page py-9">
     <div class="cbase">
       <UIBreadcrumbs :items="breads" />
-      
+
       <h1 class="text-7xl orange font-bold mb-8">RPGs</h1>
-      
+
       <div class="base-grid">
         <UIBookCard
           v-for="item in rpgs"
@@ -16,7 +16,7 @@ const breads = [{ link: "/rpgs", label: "RPGs" }];
           :title="item.nome"
           :author="item.autores"
           :image="item.imagem"
-          :link="`/mangas/${item.slug}`"
+          :link="`/rpgs/${item.slug}`"
         />
       </div>
     </div>

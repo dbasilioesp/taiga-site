@@ -20,6 +20,11 @@
     color(from var(--purple) srgb r g b / 0.8) 0%,
     color(from var(--purple) srgb r g b / 0.8) 100%
   );
+  --overlayGray: linear-gradient(
+    to right,
+    color(from var(--darkgrey) srgb r g b / 0.8) 0%,
+    color(from var(--darkgrey) srgb r g b / 0.8) 100%
+  );
 }
 
 @font-face {

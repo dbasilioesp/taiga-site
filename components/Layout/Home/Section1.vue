@@ -1,9 +1,9 @@
 <script></script>
 
 <template>
-  <div class="section">
-    <section class="section__content">
-      <div class="section__contentwrap">
+  <div class="sectionA">
+    <section class="sectionA__content">
+      <div class="sectionA__contentwrap">
         <h2 class="title-base text-7xl font-bold yellow shadow-text">
           Sobre nós
         </h2>
@@ -27,7 +27,7 @@
         <NuxtLink class="button-primary" to="/livros">Veja mais</NuxtLink>
       </div>
     </section>
-    <div class="section__picture">
+    <div class="sectionA__picture">
       <img src="~/assets/images/capas.png" alt="Capas dos livros" />
     </div>
   </div>
@@ -41,14 +41,14 @@
   /* justify-items: center; */
 }
 
-.section__content {
+.sectionA__content {
   background-color: var(--blue);
   display: grid;
   justify-content: end;
   align-items: center;
 }
 
-.section__contentwrap {
+.sectionA__contentwrap {
   padding: 40px;
   margin-right: 40px;
   display: flex;
@@ -58,14 +58,20 @@
   align-items: start;
 }
 
-.section__picture {
+.sectionA__picture {
   display: grid;
   justify-content: center;
   align-items: center;
   padding: 80px;
 }
 
-.section__picture img {
+.sectionA__picture img {
   height: 600px;
+}
+
+@container (width < 600px) {
+  .sectionA {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

@@ -12,17 +12,21 @@ const active = ref(false);
       <NuxtLink to="/" class="header__logo">
         <img src="~/assets/images/logo.png" alt="Logo" />
       </NuxtLink>
-      <button type="button" @click="active = true" class="header__buttonnav">
+      <button type="button" @click="active = true" class="header__buttonnav white">
         <IconMenu />
-      </button>
-      <button type="button" @click="active = false" class="header__closenav">
-        <IconClose />
       </button>
       <nav class="header__nav" :class="{ active }">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/livros">Livros</NuxtLink>
         <NuxtLink to="/mangas">Mangás</NuxtLink>
         <NuxtLink to="/rpgs">RPGs</NuxtLink>
+        <button
+          type="button"
+          @click="active = false"
+          class="header__closenav white"
+        >
+          <IconClose />
+        </button>
       </nav>
     </div>
   </header>
@@ -85,8 +89,10 @@ const active = ref(false);
   width: 100%;
 }
 
-.header__buttonnav {
-  color: white;
+
+.header__buttonnav,
+.header__closenav {
+  display: none;
 }
 
 @media (max-width: 800px) {
@@ -109,6 +115,17 @@ const active = ref(false);
 
   .header__nav.active {
     translate: 0;
+  }
+
+  .header__buttonnav {
+    display: inline-block;
+  }
+
+  .header__closenav {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
   }
 }
 </style>

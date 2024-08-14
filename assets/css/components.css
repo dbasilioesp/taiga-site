@@ -49,3 +49,9 @@
     gap: min(4vw, 15px);
   }
 }
+
+/* Link */
+
+.link {
+  color: var(--orange);
+}

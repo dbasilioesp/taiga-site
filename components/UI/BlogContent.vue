@@ -1,9 +1,9 @@
 <script setup>
 defineProps({
-    image: String,
-    description: String,
-    tags: Array
-})
+  image: String,
+  description: String,
+  tags: Array,
+});
 </script>
 
 <template>
@@ -29,5 +29,10 @@ defineProps({
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 500;
+}
+
+.blog-content > img {
+  object-fit: contain;
+  align-self: start;
 }
 </style>

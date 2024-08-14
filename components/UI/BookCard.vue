@@ -4,7 +4,7 @@ const props = defineProps({
   author: String,
   image: String,
   light: Boolean,
-  link: String
+  link: String,
 });
 </script>
 
@@ -19,6 +19,7 @@ const props = defineProps({
 <style scoped>
 .card {
   max-width: 200px;
+  width: 100%;
   color: var(--darkgrey);
 }
 
@@ -27,7 +28,6 @@ const props = defineProps({
 }
 
 .card__image {
-  width: 200px;
   height: 250px;
   object-fit: contain;
   object-position: left;
@@ -45,5 +45,14 @@ const props = defineProps({
 
 .card__author {
   color: inherit;
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 40%;
+  }
+  .card__image {
+    height: auto;
+  }
 }
 </style>

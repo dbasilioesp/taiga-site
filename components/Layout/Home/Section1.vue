@@ -38,7 +38,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
-  /* justify-items: center; */
 }
 
 .sectionA__content {
@@ -60,18 +59,23 @@
 
 .sectionA__picture {
   display: grid;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 80px;
+  overflow: hidden;
 }
 
 .sectionA__picture img {
-  height: 600px;
+  max-height: 600px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .sectionA {
     grid-template-columns: 1fr;
+  }
+
+  .sectionA__content {
+    justify-content: center;
   }
 }
 </style>

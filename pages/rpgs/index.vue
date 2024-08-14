@@ -4,7 +4,7 @@ const breads = [{ link: "/rpgs", label: "RPGs" }];
 
 <template>
   <div class="page py-9">
-    <div class="cbase">
+    <div class="cbase inline-size">
       <UIBreadcrumbs :items="breads" />
 
       <h1 class="text-7xl orange font-bold mb-8">RPGs</h1>

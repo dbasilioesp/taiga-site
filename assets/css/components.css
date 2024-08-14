@@ -30,11 +30,22 @@
   width: 100%;
 }
 
+@container (max-width: 600px) {
+  .colorbox {
+    padding: 20px;
+  }
+}
 
 /* Grids */
 
 .base-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: min(4vw, 30px);
+}
+
+@container (max-width: 600px) {
+  .base-grid {
+    gap: min(4vw, 15px);
+  }
 }

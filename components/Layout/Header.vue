@@ -10,7 +10,6 @@ onMounted(() => {
   if (nav.value) {
     const links = nav.value.querySelectorAll("a");
     links.forEach((link) => {
-      console.log(link);
       link.addEventListener("click", () => (active.value = false));
     });
   }
@@ -21,7 +20,7 @@ onMounted(() => {
   <header class="header" :class="{ isHome: props.home }">
     <div class="header__wrap cbase">
       <NuxtLink to="/" class="header__logo">
-        <img src="~/assets/images/logo.png" alt="Logo" />
+        <img src="~/assets/images/logo-horizontal-com-borda.svg" alt="Logo" />
       </NuxtLink>
       <button
         type="button"
@@ -86,6 +85,10 @@ onMounted(() => {
 }
 .header__nav a:hover {
   color: var(--orange);
+}
+
+.header__logo img {
+  width: 180px;
 }
 
 .header__nav a:before {

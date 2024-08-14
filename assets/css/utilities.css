@@ -1,9 +1,21 @@
 .cbase {
   width: 100%;
   max-width: 1110px;
-  padding: 0 20px;
+  padding: 0 40px;
   margin-inline-start: auto;
   margin-inline-end: auto;
+  container-type: inline-size;
+}
+
+@media (max-width: 600px) {
+  .cbase {
+    padding: 0 20px;
+  }
+}
+
+/* Container query */
+.inline-size {
+  container-type: inline-size;
 }
 
 /* Colors */

@@ -81,4 +81,10 @@
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width: 900px) {
+  .sectionC {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

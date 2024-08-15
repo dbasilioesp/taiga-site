@@ -1,10 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   ssr: false,
-  css: ['~/assets/css/main.css'],
-  modules: ['@nuxtjs/tailwindcss', "@nuxt/content"],
+  css: ["~/assets/css/main.css"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxt/image"],
   postcss: {},
   tailwindcss: {
     exposeConfig: true,
@@ -22,25 +22,40 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/png",
-          href: "/images/favicon/favicon_32.png",
+          sizes: "32x32",
+          href: "/favicon/favicon-32x32.png",
         },
         {
           rel: "icon",
           type: "image/png",
-          href: "/images/favicon/favicon_180.png",
+          sizes: "16x16",
+          href: "/favicon/favicon-16x16.png",
         },
         {
-          rel: "icon",
-          type: "image/png",
-          href: "/images/favicon/favicon_192.png",
+          rel: "apple-touch-icon",
+          sizes: "180x180",
+          href: "/favicon/apple-touch-icon.png",
+        },
+        {
+          rel: "manifest",
+          href: "/favicon/site.webmanifest",
+        },
+        {
+          rel: "manifest",
+          href: "/favicon/safari-pinned-tab.svg",
+          color: "#5bbad5",
         },
       ],
       meta: [
         {
-          name: "facebook-domain-verification",
-          // content: "xxn44nui7v1m7f0ub61li1fv8edkq4",
+          name: "theme-color",
+          content: "#ffffff",
+        },
+        {
+          name: "msapplication-TileColor",
+          content: "#da532c",
         },
       ],
-    }
-  }
-})
+    },
+  },
+});

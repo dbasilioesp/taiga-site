@@ -30,7 +30,7 @@
   width: 100%;
 }
 
-@container (max-width: 600px) {
+@media (max-width: 600px) {
   .colorbox {
     padding: 20px;
   }
@@ -44,7 +44,7 @@
   gap: min(4vw, 30px);
 }
 
-@container (max-width: 600px) {
+@media (max-width: 600px) {
   .base-grid {
     gap: min(4vw, 15px);
   }
@@ -54,4 +54,8 @@
 
 .link {
   color: var(--orange);
+}
+
+.link:hover {
+  text-decoration: underline;
 }

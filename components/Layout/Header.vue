@@ -119,8 +119,9 @@ onMounted(() => {
 
   .header__nav {
     position: fixed;
-    height: 100%;
+    height: 100svh;
     width: 100%;
+    z-index: 20;
     background-color: var(--purple);
     top: 0;
     right: 0;

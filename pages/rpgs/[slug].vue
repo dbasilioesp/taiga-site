@@ -2,6 +2,10 @@
 const route = useRoute();
 const rpg = rpgs.find((i) => i.slug == route.params.slug);
 
+useSeoMeta({
+  title: rpg.nome,
+});
+
 const breads = [
   { link: "/rpgs", label: "RPGs" },
   { link: `/rpgs/${route.params.slug}`, label: rpg.nome },

@@ -3,6 +3,9 @@
 definePageMeta({
   layout: "home",
 });
+useSeoMeta({
+  title: "Início",
+});
 </script>
 
 <template>

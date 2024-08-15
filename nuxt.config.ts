@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      title: "Taiga Livraria",
       htmlAttrs: {
         lang: "pt-BR",
       },

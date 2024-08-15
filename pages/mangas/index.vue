@@ -1,5 +1,9 @@
 <script setup>
 const breads = [{ link: "/mangas", label: "Mangás" }];
+
+useSeoMeta({
+  title: "Mangás",
+});
 </script>
 
 <template>

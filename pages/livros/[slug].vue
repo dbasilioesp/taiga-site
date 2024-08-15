@@ -2,9 +2,13 @@
 const route = useRoute();
 const book = books.find((i) => i.slug == route.params.slug);
 
+useSeoMeta({
+  title: book.nome,
+});
+
 const breads = [
   { link: "/livros", label: "Livros" },
-  { link: `/livros/${route.params.slug}`, label: book.nome }
+  { link: `/livros/${route.params.slug}`, label: book.nome },
 ];
 </script>
 

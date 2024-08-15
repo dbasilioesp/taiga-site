@@ -1,5 +1,9 @@
 <script setup>
 const breads = [{ link: "/rpgs", label: "RPGs" }];
+
+useSeoMeta({
+  title: "RPGs",
+});
 </script>
 
 <template>

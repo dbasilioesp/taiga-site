@@ -1,11 +1,13 @@
 <script setup>
+useSeoMeta({
+  title: "Livros",
+});
+
 const recommendations = computed(() => {
   return books.filter((i) => i.imagem && i.recomendamos);
 });
 
-const breads = [
-  { link: "/livros", label: "Livros" },
-];
+const breads = [{ link: "/livros", label: "Livros" }];
 
 const categories = [
   {
@@ -31,16 +33,18 @@ const categories = [
   <div class="page py-9">
     <div class="cbase">
       <UIBreadcrumbs :items="breads" />
-      
+
       <h1 class="text-7xl orange font-bold mb-6">Livros</h1>
-      
+
       <div class="colorbox recommendation">
         <h2
           class="recommendation__title text-4xl white font-bold mb-6 uppercase"
         >
           Recomendamos
         </h2>
-        <p class="mb-8 text-lg white">Quatro livros que gostariamos que nossos clientes lessem.</p>
+        <p class="mb-8 text-lg white">
+          Quatro livros que gostariamos que nossos clientes lessem.
+        </p>
         <div class="recommendation__grid">
           <UIBookCard
             v-for="book in recommendations"
@@ -54,7 +58,9 @@ const categories = [
       </div>
 
       <h2 class="text-4xl orange font-bold mb-2 uppercase mt-10">Categorias</h2>
-      <p class="mb-8 text-lg font-medium">Selecione a categoria que mais gosta:</p>
+      <p class="mb-8 text-lg font-medium">
+        Selecione a categoria que mais gosta:
+      </p>
       <div class="categories">
         <NuxtLink
           v-for="category in categories"

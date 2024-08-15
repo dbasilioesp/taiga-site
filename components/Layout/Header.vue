@@ -30,7 +30,7 @@ onMounted(() => {
         <IconMenu />
       </button>
       <nav class="header__nav" :class="{ active }" ref="nav">
-        <NuxtLink to="/">Home</NuxtLink>
+        <NuxtLink to="/">Início</NuxtLink>
         <NuxtLink to="/livros">Livros</NuxtLink>
         <NuxtLink to="/mangas">Mangás</NuxtLink>
         <NuxtLink to="/rpgs">RPGs</NuxtLink>

@@ -17,6 +17,16 @@ export const mangas = [
     recomendamos: true,
     editora: "",
     slug: "boruto",
-    descricao: "",
+    descricao: `
+    <p>Uzumaki Boruto, filho de Uzumaki Naruto, o Sétimo Hokage, se inscreveu na Academia Ninja para aprender a ser um verdadeiro ninja. Os outros estudantes o ignoram por ser "apenas o filho do Hokage", mas a paixão e a personalidade do Boruto vai acabar com todos esses preconceitos. Quando uma série de misteriosos eventos começa a se desenrolar, cabe a Boruto e seus novos amigos a investigá-los. Como um tornado, Boruto entra no coração de todos: sua história está prestes a começar!</p>
+    <table>
+      <thead>
+        <tr>
+          <td>Volume</td>
+          <td>
+        </tr>
+      </thead>
+    </table>
+    `,
   },
 ];

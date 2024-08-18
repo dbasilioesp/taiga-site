@@ -3,58 +3,73 @@ defineProps({
   image: String,
   description: String,
   tags: Array,
+  doc: Object,
 });
 </script>
 
 <template>
-  <div class="blog-content">
+  <div class="blogContent">
     <img :src="image" width="400" alt="" />
     <div>
-      <div class="blog-content__grid mb-4">
+      <div class="blogContent__grid mb-4">
         <UITag v-for="tag in tags" :key="tag">{{ tag }}</UITag>
       </div>
-      <div class="blog-content__desc" v-html="description"></div>
+      <div
+        class="blogContent__desc"
+        v-html="description"
+        v-if="description"
+      ></div>
+      <ContentRenderer :value="doc" />
+      <UIVolumeTable
+        v-if="doc.volumes"
+        :volumes="doc.volumes"
+        class="blogContent__volumes"
+      />
     </div>
   </div>
 </template>
 
 <style>
-.blog-content {
+.blogContent {
   display: flex;
   gap: 40px;
 }
 
-.blog-content__grid {
+.blogContent__grid {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.blog-content__desc p {
+.blogContent__desc p {
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 500;
 }
 
-.blog-content__desc ul {
+.blogContent__desc ul {
   margin-bottom: 20px;
   padding-left: 20px;
   font-weight: 500;
 }
 
-.blog-content__desc li {
+.blogContent__desc li {
   list-style: disc;
   margin-bottom: 10px;
   font-size: 18px;
 }
 
-.blog-content > img {
+.blogContent > img {
   object-fit: contain;
   align-self: start;
 }
 
+.blogContent__volumes {
+  margin-top: 20px;
+}
+
 @media (max-width: 600px) {
-  .blog-content {
+  .blogContent {
     display: flex;
     flex-direction: column;
     gap: 40px;

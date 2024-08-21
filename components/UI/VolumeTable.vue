@@ -21,7 +21,10 @@ defineProps({
             </li>
           </ul>
         </td>
-        <td>{{ volume.volume }}</td>
+        <td>
+          <div>{{ volume.volume }}</div>
+          <div v-if="volume.title">{{ volume.title }}</div>
+        </td>
       </tr>
     </tbody>
   </table>

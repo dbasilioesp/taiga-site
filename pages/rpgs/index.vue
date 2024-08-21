@@ -13,7 +13,7 @@ useSeoMeta({
 
       <h1 class="text-7xl orange font-bold mb-8">RPGs</h1>
 
-      <div class="base-grid">
+      <div class="baseGrid">
         <UIBookCard
           v-for="item in rpgs"
           :key="item.nome"

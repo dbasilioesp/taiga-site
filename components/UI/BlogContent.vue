@@ -19,9 +19,9 @@ defineProps({
         v-html="description"
         v-if="description"
       ></div>
-      <ContentRenderer :value="doc" />
+      <ContentRenderer :value="doc" v-if="doc" />
       <UIVolumeTable
-        v-if="doc.volumes"
+        v-if="doc?.volumes"
         :volumes="doc.volumes"
         class="blogContent__volumes"
       />

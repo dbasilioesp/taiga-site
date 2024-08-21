@@ -7,26 +7,11 @@ const recommendations = computed(() => {
   return books.filter((i) => i.imagem && i.recomendamos);
 });
 
-const breads = [{ link: "/livros", label: "Livros" }];
+const others = computed(() => {
+  return books.filter((i) => i.imagem && !i.recomendamos);
+});
 
-const categories = [
-  {
-    title: "Fantasia",
-    link: "/livros/categoria/fantasia",
-    color: "var(--orange)",
-  },
-  {
-    title: "Horror",
-    link: "/livros/categoria/horror",
-    color: "var(--darkgrey)",
-  },
-  {
-    title: "Romance",
-    link: "/livros/categoria/romance",
-    color: "var(--lilas)",
-  },
-  { title: "Social", link: "/livros/categoria/social", color: "var(--yellow)" },
-];
+const breads = [{ link: "/livros", label: "Livros" }];
 </script>
 
 <template>
@@ -57,20 +42,15 @@ const categories = [
         </div>
       </div>
 
-      <h2 class="text-4xl orange font-bold mb-2 uppercase mt-10">Categorias</h2>
-      <p class="mb-8 text-lg font-medium">
-        Selecione a categoria que mais gosta:
-      </p>
-      <div class="categories">
-        <NuxtLink
-          v-for="category in categories"
-          :key="category.title"
-          :to="category.link"
-          class="categories__card"
-          :style="`background-color: ${category.color}`"
-        >
-          {{ category.title }}
-        </NuxtLink>
+      <div class="page__list baseGrid">
+        <UIBookCard
+          v-for="book in others"
+          :key="book.nome"
+          :title="book.nome"
+          :author="book.autores"
+          :image="book.imagem"
+          :link="`/livros/${book.slug}`"
+        />
       </div>
     </div>
   </div>
@@ -113,5 +93,10 @@ const categories = [
 
 .categories__card:hover {
   filter: brightness(1.3);
+}
+
+.page__list {
+  margin-top: 60px;
+  padding: 30px;
 }
 </style>

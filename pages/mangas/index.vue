@@ -1,6 +1,10 @@
 <script setup>
 const breads = [{ link: "/mangas", label: "Mangás" }];
 
+const mangas = await useAsyncData("mangas", () =>
+  queryContent("mangas").find()
+);
+
 useSeoMeta({
   title: "Mangás",
 });
@@ -16,14 +20,14 @@ useSeoMeta({
         Muitos dos mangás que temos são Shonnen, mas aos poucos vamos equilibrar
         com outros genêros.
       </p>
-      <div class="base-grid">
+      <div class="baseGrid">
         <UIBookCard
-          v-for="item in mangas"
-          :key="item.nome"
-          :title="item.nome"
+          v-for="item in mangas.data.value"
+          :key="item.title"
+          :title="item.title"
           :author="item.autores"
           :image="item.imagem"
-          :link="`/mangas/${item.slug}`"
+          :link="item._path"
         />
       </div>
     </div>

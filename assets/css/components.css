@@ -38,14 +38,14 @@
 
 /* Grids */
 
-.base-grid {
+.baseGrid {
   display: flex;
   flex-wrap: wrap;
   gap: min(4vw, 30px);
 }
 
 @media (max-width: 600px) {
-  .base-grid {
+  .baseGrid {
     gap: min(4vw, 15px);
   }
 }

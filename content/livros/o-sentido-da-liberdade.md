@@ -1,8 +1,8 @@
 ---
 title: "O sentido da liberdade"
-autores: "Angela Davis",
-imagem: "/images/livros/O sentido da liberdade.png",
-tags: ["politicas"],
+autores: "Angela Davis"
+imagem: "/images/livros/O sentido da liberdade.png"
+tags: ["politicas"]
 ---
 
 Qual é o sentido da liberdade? Ao longo de décadas de trabalho, a filósofa Angela Davis se dedica a analisar a questão que dá título a este livro e a propor caminhos para extinguir todas as formas de opressão que negam aos sujeitos liberdade política, cultural e sexual.

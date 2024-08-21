@@ -3,6 +3,11 @@ useSeoMeta({
   title: "Livros",
 });
 
+const { data } = await useAsyncData("livros", () =>
+  queryContent("livros").find()
+);
+const books = data.value;
+
 const recommendations = computed(() => {
   return books.filter((i) => i.imagem && i.recomendamos);
 });
@@ -33,23 +38,25 @@ const breads = [{ link: "/livros", label: "Livros" }];
         <div class="recommendation__grid">
           <UIBookCard
             v-for="book in recommendations"
-            :key="book.nome"
-            :title="book.nome"
+            :key="book.title"
+            :title="book.title"
             :author="book.autores"
             :image="book.imagem"
-            :link="`/livros/${book.slug}`"
+            :link="book._path"
           />
         </div>
       </div>
 
-      <div class="page__list baseGrid">
+      <h2 class="text-4xl font-bold mt-10 mb-10 uppercase">Mais livros</h2>
+
+      <div class="page__list baseGrid mb-10">
         <UIBookCard
           v-for="book in others"
-          :key="book.nome"
-          :title="book.nome"
+          :key="book.title"
+          :title="book.title"
           :author="book.autores"
           :image="book.imagem"
-          :link="`/livros/${book.slug}`"
+          :link="book._path"
         />
       </div>
     </div>
@@ -93,10 +100,5 @@ const breads = [{ link: "/livros", label: "Livros" }];
 
 .categories__card:hover {
   filter: brightness(1.3);
-}
-
-.page__list {
-  margin-top: 60px;
-  padding: 30px;
 }
 </style>

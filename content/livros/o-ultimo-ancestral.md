@@ -1,10 +1,10 @@
 ---
 title: "O Último Ancestral"
-autores: "Ale Santos",
-imagem: "/images/livros/OUltimoAncestral.jpg",
-tags: ["romance", "afrofuturismo", "ficção"],
-recomendamos: true,
-editora: "HarperCollins",
+autores: "Ale Santos"
+imagem: "/images/livros/OUltimoAncestral.jpg"
+tags: ["romance", "afrofuturismo", "ficção"]
+recomendamos: true
+editora: "HarperCollins"
 ---
 
 **Finalista do 1º CCXP Awards na categoria ficção e do Prêmio Jabuti 2022 na categoria romance de entretenimento**

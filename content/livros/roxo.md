@@ -1,10 +1,10 @@
 ---
 title: "Roxo"
-autores: "Andréa Berriell",
-imagem: "/images/livros/Roxo.jpeg",
-tags: ["romance", "afrofuturismo", "ficção"],
-recomendamos: true,
-editora: "Grifo",
+autores: "Andréa Berriell"
+imagem: "/images/livros/Roxo.jpeg"
+tags: ["romance", "afrofuturismo", "ficção"]
+recomendamos: true
+editora: "Grifo"
 ---
 
 Inverno de 1986. Duas crianças encontram o corpo de uma monitora no banheiro do acampamento de escoteiras. A policial Olga Lacava não hesita em revirar todas as peças da investigação, mas pela primeira vez ela falha.

@@ -2,7 +2,7 @@
 title: "A liberdade é uma luta constante"
 autores: "Angela Davis"
 imagem: "/images/livros/A liberdade e uma luta constante.jpg"
-tags: ["romance", "afrofuturismo", "ficção"]
+tags: []
 recomendamos: true
 ---
 

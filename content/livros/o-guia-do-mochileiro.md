@@ -1,7 +1,7 @@
 ---
 title: "O guia do mochileiro das galáxias"
 autores: "Douglas adams"
-imagem: "/images/livros/O guia do mochileiro das galáxias.jpg"
+imagem: "/images/livros/O guia do mochileiro.jpg"
 tags: []
 recomendamos: false
 ---

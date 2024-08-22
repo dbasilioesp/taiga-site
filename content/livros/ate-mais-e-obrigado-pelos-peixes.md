@@ -1,7 +1,7 @@
 ---
 title: "Até mais, e obrigado pelos peixes! - Vol. 4"
 autores: "Douglas Adams"
-imagem: "/images/livros/Até mais, e obrigado pelos peixes! - Vol. 4.jpg"
+imagem: "/images/livros/ate-mais-e-obrigado-pelos-peixes.jpg"
 tags: []
 recomendamos: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: "As aventuras de pinóquio"
 autores: "Carlo Collodi"
-imagem: "/images/livros/As aventuras de pinóquio.png"
+imagem: "/images/livros/As aventuras de pinoquio.png"
 tags: []
 recomendamos: false
 ---

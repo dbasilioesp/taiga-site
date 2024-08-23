@@ -59,3 +59,11 @@
 .link:hover {
   text-decoration: underline;
 }
+
+/* Post */
+
+.article p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}

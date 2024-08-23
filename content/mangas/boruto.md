@@ -6,11 +6,12 @@ tags: ["shonnen", "fantasia"]
 volumes:
   [
     {
+      volume: 1,
       chapters:
         ["Boruto Uzumaki!!", "Começam os Treinos!!", "Começa o Exame Chunin!!"],
-      volume: 1,
     },
     {
+      volume: 2,
       chapters:
         [
           "Velho Maldito!!",
@@ -18,9 +19,9 @@ volumes:
           "Arrependimento",
           "Confronto!!",
         ],
-      volume: 2,
     },
     {
+      volume: 3,
       chapters:
         [
           "É Você que Vai Resolver",
@@ -28,9 +29,9 @@ volumes:
           "A Minha História!!",
           "Uma Nova Missão",
         ],
-      volume: 3,
     },
     {
+      volume: 4,
       chapters:
         [
           "Amigos!!",
@@ -38,10 +39,10 @@ volumes:
           "Trabalho em Grupo!!",
           "O Kage que Apoia!!",
         ],
-      volume: 4,
     },
-    { chapters: ["Receptáculo", "Ao", "A Mão", "Marionete"], volume: 5 },
+    { volume: 5, chapters: ["Receptáculo", "Ao", "A Mão", "Marionete"] },
     {
+      volume: 6,
       chapters:
         [
           "Ferramentas Científicas Ninja",
@@ -49,18 +50,18 @@ volumes:
           "O Fim da Luta Acirrada!",
           "Karma",
         ],
-      volume: 6,
     },
     {
+      volume: 7,
       chapters:
         ["Kawaki", "Ressonância", "Presente", "Fracasso nas Negociações!!"],
-      volume: 7,
     },
     {
-      chapters: ["Flor", "O Kage Bunshin no Jutsu", "Confronto!!", "Monstro…!"],
       volume: 8,
+      chapters: ["Flor", "O Kage Bunshin no Jutsu", "Confronto!!", "Monstro…!"],
     },
     {
+      volume: 9,
       chapters:
         [
           "Honra",
@@ -68,9 +69,9 @@ volumes:
           "Treinamento!!",
           "Tudo Depende de Você",
         ],
-      volume: 9,
     },
     {
+      volume: 10,
       chapters:
         [
           "Ataque Surpresa…!!",
@@ -78,9 +79,9 @@ volumes:
           "Um Cara Terrível",
           "A Confirmação",
         ],
-      volume: 10,
     },
     {
+      volume: 11,
       chapters:
         [
           "A Técnica Invisível",
@@ -88,20 +89,19 @@ volumes:
           "Restauração",
           "A Manifestação…!!",
         ],
-      volume: 11,
     },
     {
-      chapters: ["Amado", "Exílio", "A Verdadeira Face", "Destino"],
       volume: 12,
+      chapters: ["Amado", "Exílio", "A Verdadeira Face", "Destino"],
     },
     {
+      volume: 13,
       chapters:
         ["A Peça a Ser Sacrificada", "Decisão", "Valor de Uso", "A Oferenda"],
-      volume: 13,
     },
     {
-      chapters: ["Modo Bárion", "Esta é a Realidade", "Irmãos", "A Herança"],
       volume: 14,
+      chapters: ["Modo Bárion", "Esta é a Realidade", "Irmãos", "A Herança"],
     },
   ]
 ---

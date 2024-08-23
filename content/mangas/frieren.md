@@ -5,6 +5,7 @@ tags: ["fantasia"]
 volumes:
   [
     {
+      volume: 1,
       title: "O Fim da Jornada e o Novo Começo",
       chapters:
         [
@@ -16,9 +17,9 @@ volumes:
           "Memórias do Passado",
           "Encontro com a Magia",
         ],
-      volume: 1,
     },
     {
+      volume: 2,
       title: "Explorando o Passado",
       chapters:
         [
@@ -30,9 +31,9 @@ volumes:
           "A Segunda Prova",
           "O encontro de Eisen",
         ],
-      volume: 2,
     },
     {
+      volume: 3,
       title: "As Memórias da Magia",
       chapters:
         [
@@ -44,7 +45,76 @@ volumes:
           "A Derrota do Inimigo",
           "Uma Nova Aventura",
         ],
-      volume: 3,
+    },
+    {
+      volume: 4,
+      title: "Ecos do Passado",
+      chapters:
+        [
+          "As Sombras de Zoltan",
+          "O Desafio de Fern",
+          "Lições de Vida",
+          "O Peso do Tempo",
+          "A Lenda de Frieren",
+          "A Torre dos Magos",
+          "Um Novo Inimigo",
+        ],
+    },
+    {
+      volume: 5,
+      title: "O Caminho do Herói",
+      chapters:
+        [
+          "A Escolha de Eisen",
+          "O Teste de Coragem",
+          "O Confronto com o Passado",
+          "A Cidade das Lembranças",
+          "A Jornada Solitária",
+          "Os Laços de Amizade",
+          "O Fim de Uma Era",
+        ],
+    },
+    {
+      volume: 6,
+      title: "Fragmentos do Futuro",
+      chapters:
+        [
+          "A Magia Perdida",
+          "O Legado dos Magos",
+          "O Teste de Fern",
+          "O Despertar do Poder",
+          "O Confronto Final",
+          "O Novo Amanhecer",
+          "A Jornada Continua",
+        ],
+    },
+    {
+      volume: 7,
+      title: "A Ascensão dos Magos",
+      chapters:
+        [
+          "O Retorno de Frieren",
+          "O Desafio da Eternidade",
+          "A Força dos Magos",
+          "O Caminho para o Futuro",
+          "A Decisão de Fern",
+          "O Legado do Herói",
+          "A Luta Contra o Destino",
+        ],
+    },
+    {
+      volume: 8,
+      title: "As Estrelas da Esperança",
+      chapters:
+        [
+          "A Magia das Estrelas",
+          "O Destino de Frieren",
+          "O Caminho dos Heróis",
+          "A Verdade Oculta",
+          "O Novo Desafio",
+          "O Teste da Eternidade",
+          "O Fim do Caminho",
+        ],
     },
   ]
 ---

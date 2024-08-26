@@ -4,6 +4,62 @@ useSeoMeta({
 });
 
 const breads = [{ link: "/eventos", label: "Eventos" }];
+
+const meets = [
+  {
+    date: "17 de Agosto de 2024",
+    groups: [
+      {
+        guide: "Bia",
+        system: "D&D 5e",
+        characters: [
+          "Loki, o Arqueiro Arcano",
+          "Salazar, o Mago",
+          "Luna, a Ladina",
+          "Wybie, o Bruxo",
+          "Leopoldo, o Guerreiro",
+          "Rodion, o Clérigo",
+          "Alex, o Guardião.",
+        ],
+      },
+    ],
+  },
+  {
+    date: "3 de Agosto de 2024",
+    groups: [
+      {
+        guide: "Bia",
+        system: "D&D 5e",
+        characters: [
+          "Loki, o Arqueiro Arcano",
+          "Salazar, o Mago",
+          "Luna, a Ladina",
+          "Wybie, o Bruxo",
+          "Kyrion, o Guerreiro",
+          "Sener Dryck, o Druida",
+        ],
+      },
+    ],
+  },
+  {
+    date: "25 de Maio de 2024",
+    groups: [
+      {
+        guide: "David",
+        system: "D&D 5e",
+        characters: [
+          "Momonga - Bruxo",
+          "Kyrian - Guerreiro",
+          "Apollo - Paladino",
+          "Art - Ladino",
+          "Nessa - Guardiã",
+          "Lormoon - Feiticeiro",
+          "Arthur - Guerreiro",
+        ],
+      },
+    ],
+  },
+];
 </script>
 
 <template>
@@ -40,43 +96,13 @@ const breads = [{ link: "/eventos", label: "Eventos" }];
 
       <div>
         <h2 class="text-2xl font-bold mb-2 orange">Encontros</h2>
-        <div>
-          <h3 class="text-xl font-bold">17 de Agosto de 2024</h3>
-          <h4 class="font-bold mt-2">Mesa 1</h4>
-          <ul class="list-disc list-inside">
-            <li>Mestra: Bia</li>
-            <li>Sistema: D&D 5e</li>
-            <li>
-              Personagens:
-              <ul class="list-disc list-inside ml-5">
-                <li>Loki, o Arqueiro Arcano</li>
-                <li>Salazar, o Mago</li>
-                <li>Luna, a Ladina</li>
-                <li>Wybie, o Bruxo</li>
-                <li>Leopoldo, o Guerreiro</li>
-                <li>Rodion, o Clérigo</li>
-                <li>Alex, o Guardião.</li>
-              </ul>
-            </li>
-          </ul>
-
-          <h3 class="text-xl font-bold mt-3">3 de Agosto de 2024</h3>
-          <h4 class="font-bold mt-2">Mesa 1</h4>
-          <ul class="list-disc list-inside">
-            <li>Mestra: Bia</li>
-            <li>Sistema: D&D 5e</li>
-            <li>
-              Personagens:
-              <ul class="list-disc list-inside ml-5">
-                <li>Loki, o Arqueiro Arcano</li>
-                <li>Salazar, o Mago</li>
-                <li>Luna, a Ladina</li>
-                <li>Wybie, o Bruxo</li>
-                <li>Kyrion, o Guerreiro</li>
-                <li>Sener Dryck, o Druida</li>
-              </ul>
-            </li>
-          </ul>
+        <div class="flex flex-wrap flex-col sm:flex-row gap-14">
+          <UIMeetDay
+            :meet="meet"
+            v-for="meet in meets"
+            :key="meet.date"
+            class="mb-4"
+          />
         </div>
       </div>
     </div>

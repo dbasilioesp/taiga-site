@@ -15,7 +15,7 @@
         <p class="text-xl white">
           Além da literatura abraçamos as light novels no formato de mangás
           japoneses. Tendo títulos como Naruto, One Piece, Attack on Titan, que
-          já são muito famosos, mas também titulos menos conhecidos como
+          já são muito famosos, mas também títulos menos conhecidos como
           Mieroku-chan, Dorohedoro e Guntz.
         </p>
         <p class="text-xl white">

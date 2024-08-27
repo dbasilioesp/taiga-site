@@ -51,7 +51,7 @@ onMounted(() => {
 .header {
   width: 100%;
   height: var(--headerHeight);
-  background-color: var(--darkgrey);
+  background-color: var(--purple);
 }
 
 .header.isHome {
@@ -64,8 +64,14 @@ onMounted(() => {
   display: flex;
   gap: 40px;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   height: 100%;
+  max-width: var(--container);
+  width: 100%;
+}
+
+.header.isHome .header__wrap {
+  justify-content: center;
 }
 
 .header__nav {

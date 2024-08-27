@@ -5,50 +5,28 @@ defineProps({
 </script>
 
 <template>
-  <table class="volumeTable">
-    <thead>
-      <tr>
-        <th>Capítulos</th>
-        <th class="volumeTable__col3">Volume</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="volume in volumes" :key="volume.volume">
-        <td style="text-align: left">
-          <ul>
-            <li v-for="(chapter, idx) in volume.chapters" :key="chapter">
-              {{ idx + 1 }}. {{ chapter }}
-            </li>
-          </ul>
-        </td>
-        <td>
-          <div>{{ volume.volume }}</div>
-          <div v-if="volume.title">{{ volume.title }}</div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div>
+    <h3 class="text-xl font-medium mb-4 roboto">Volumes:</h3>
+    <details
+      v-for="(volume, idx) in volumes"
+      :key="volume.volume"
+      :open="idx == 0"
+      class="mb-4"
+    >
+      <summary class="cursor-pointer roboto">
+        {{ volume.volume }}. {{ volume.title }}
+      </summary>
+      <ul class="mt-2">
+        <li
+          v-for="chapter in volume.chapters"
+          :key="chapter"
+          class="roboto text-sm"
+        >
+          {{ chapter }}
+        </li>
+      </ul>
+    </details>
+  </div>
 </template>
 
-<style>
-.volumeTable {
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.volumeTable :is(td, th) {
-  border: 1px solid var(--lilas);
-  border-radius: 2px;
-  padding: 5px 20px;
-}
-
-.volumeTable__col1 {
-  width: 30%;
-}
-
-.volumeTable__col2 {
-  width: 10%;
-}
-</style>
+<style></style>

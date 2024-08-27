@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  meet: Array,
+  meet: Object,
 });
 </script>
 

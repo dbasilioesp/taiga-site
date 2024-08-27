@@ -1,26 +1,53 @@
+<script setup>
+const props = defineProps({
+  home: Boolean,
+});
+</script>
+
 <template>
-  <footer class="footer">
-    <h2 class="title-base text-5xl font-bold white">Contato</h2>
-    <p class="text-base white text-center">
-      Localização: Rua Gavião, 880 - Alvorada - RS.<br />
-      Telefone: 51 98484.1686
-    </p>
+  <footer class="footer" :class="{ home }">
+    <div class="footer__inner cbase">
+      <p class="text-base white">
+        Localização: Rua Gavião, 880 - Alvorada - RS.<br />
+        Telefone: 51 98484.1686
+      </p>
+      <div>
+        <a
+          href="https://www.instagram.com/livrariataiga/"
+          target="_blank"
+          class="footer__social"
+        >
+          <IconInstagram width="36px" height="36px" />
+        </a>
+      </div>
+    </div>
   </footer>
 </template>
 
 <style scoped>
 .footer {
-  display: grid;
-  place-items: center;
-  gap: 30px;
-  padding: 80px 40px;
+  padding: 30px 40px;
   background-color: var(--darkgrey);
 }
 
-.footer__desc {
-  max-width: 500px;
-  width: 100%;
-  font-weight: 500;
-  text-wrap: pretty;
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer.home .footer__inner {
+  align-items: center;
+  text-align: center;
+}
+
+.footer__social {
+  color: white;
+  transition: all 0.3s;
+}
+
+.footer__social:hover {
+  color: var(--yellow);
 }
 </style>

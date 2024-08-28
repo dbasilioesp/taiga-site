@@ -50,6 +50,54 @@ volumes:
           "Capítulo 25: Tolices de uma Mente Fechada",
         ],
     },
+    {
+      volume: 4,
+      title: "Eu vou te matar",
+      chapters:
+        [
+          "Capítulo 26: Para você de algum outro dia",
+          "Capítulo 27: E se...",
+          "Capítulo 28: Eu vou te matar",
+          "Capítulo 29: Crescimento",
+          "Capítulo 30: Egoísta",
+          "Capítulo 31: Até Amanhã",
+          "Capítulo 32: Reflexão",
+          "Capítulo 33: Intercâmbio com Kayoto ~ Batalha em Times Pt.0",
+          "Capítulo 34: Intercâmbio com Kayoto ~ Batalha em Times Pt.1",
+        ],
+    },
+    {
+      volume: 5,
+      title: "Intercâmbio com Kayoto ~ Batalha em Times",
+      chapters:
+        [
+          "Capítulo 35: Intercâmbio com Kayoto ~ Batalha em Times Pt.2",
+          "Capítulo 36: Intercâmbio com Kayoto ~ Batalha em Times Pt.3",
+          "Capítulo 37: Intercâmbio com Kayoto ~ Batalha em Times Pt.4",
+          "Capítulo 38: Intercâmbio com Kayoto ~ Batalha em Times Pt.5",
+          "Capítulo 39: Intercâmbio com Kayoto ~ Batalha em Times Pt.6",
+          "Capítulo 40: Intercâmbio com Kayoto ~ Batalha em Times Pt.7",
+          "Capítulo 41: Intercâmbio com Kayoto ~ Batalha em Times Pt.8",
+          "Capítulo 42: Intercâmbio com Kayoto ~ Batalha em Times Pt.9",
+          "Capítulo 43: Intercâmbio com Kayoto ~ Batalha em Times Pt.10",
+        ],
+    },
+    {
+      volume: 6,
+      title: "Black Flash",
+      chapters:
+        [
+          "Capítulo 44: Intercâmbio com Kayoto ~ Batalha em Times Pt.11",
+          "Capítulo 45: Sábio",
+          "Capítulo 46: Tempo",
+          "Capítulo 47: As Ferramentas Amaldiçoadas de Jugu",
+          "Capítulo 48: Black Flash",
+          "Capítulo 49: Constrangido",
+          "Capítulo 50: Premonição",
+          "Capítulo 51: Flor",
+          "Capítulo 52: Fora da Curva",
+        ],
+    },
   ]
 ---
 

@@ -8,7 +8,44 @@ volumes:
     {
       volume: 1,
       title: "Casa Grace Field",
-      chapters: ["Capítulo 1: Casa Grace Field", "Capítulo 2: "],
+      chapters:
+        [
+          "Capítulo 1: Casa Grace Field (GFグレース＝フィールドハウス)",
+          "Capítulo 2: A Saída (出口, Deguchi)",
+          "Capítulo 3: A Mulher de Ferro (鉄の女, Tetsu no onna)",
+          "Capítulo 4: A Melhor Opção  (“最善”, Saizen)",
+          "Capítulo 5: Ela nos pegou! (やられた！, Yarareta!)",
+          "Capítulo 6: Carol e Krone (キャロルとクローネ, Kyaroru to Kurōne)",
+          "Capítulo 7: Estamos contando com você (頼んだぞ, Tanonda zo)",
+        ],
+    },
+    { volume: 2, title: "Controle", chapters: [
+          "Capítulo 8: Eu tenho uma idéia (考えがある, Kangae ga aru)",
+          "Capítulo 9: Vamos brincar de pega-pega (鬼ごっこしましょう, Onigokko shimashō)",
+          "Capítulo 10: Controle (コントロール, Kontorōru)",
+          "Capítulo 11: Traídor, Parte 1 (内通者①, Naitsūsha 1)",
+          "Capítulo 12: Traídor, Parte 2 (内通者②, Naitsūsha 2)",
+          "Capítulo 13: Traídor, Parte 3 (内通者③, Naitsūsha 3)",
+          "Capítulo 14: Trunfo (切り札, Kirifuda)",
+          "Capítulo 15: Nunca mais  (二度としないで, Ni-do to shinaide)",
+          "Capítulo 16: A Sala Secreta e William Minerva, Parte 1  (秘密の部屋とWウィリアム・ミネルヴァ①, Himitsu no heya to Wiriamu Mineruva 1)
+          ",
+        ] },
+    {
+      volume: 3,
+      title: "Destruir!!",
+      chapters:
+        [
+          "Capítulo 17: A Sala Secreta e William Minerva, Parte 2",
+          "Capítulo 18: Preparado",
+          "Capítulo 19: Condenado",
+          "Capítulo 20: Aliança",
+          "Capítulo 21: Armadilha flagrante",
+          "Capítulo 22: Isca",
+          "Capítulo 23: Destruir!!",
+          "Capítulo 24: Inspecionar, Parte 1",
+          "Capítulo 25: Inspecionar, Parte 2",
+        ],
     },
   ]
 ---

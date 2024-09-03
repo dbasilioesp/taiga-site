@@ -1,7 +1,7 @@
 ---
 title: "Vê se cresce"
 autores: "Eve brown, Talia hibbert"
-imagem: "/images/livros/ve-se-cresce.jpg"
+imagem: "/images/livros/ve-se-cresce.webp"
 tags: []
 recomendamos: false
 ---

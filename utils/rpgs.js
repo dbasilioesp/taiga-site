@@ -2,7 +2,7 @@ export const rpgs = [
   {
     nome: "Ordem Paranormal",
     autores: "Cellbit - Yabu - Akila",
-    imagem: "/images/rpgs/Ordem Paranormal.png",
+    imagem: "/images/rpgs/Ordem Paranormal.webp",
     recomendamos: true,
     tags: ["playbook", "sobrenatural"],
     editora: "Jamboô",
@@ -20,7 +20,7 @@ export const rpgs = [
   {
     nome: "Tormenta 20",
     autores: "Caldela - Cassaro - Trevisan - Irmãos Svaldi",
-    imagem: "/images/rpgs/Tormenta 20.png",
+    imagem: "/images/rpgs/Tormenta 20.webp",
     tags: ["playbook", "fantasia medieval"],
     recomendamos: true,
     editora: "Jambô",
@@ -38,7 +38,7 @@ export const rpgs = [
   {
     nome: "Só Aventuras - Tormenta 20",
     autores: "Caldela - Cassaro - Trevisan - Irmãos Svaldi",
-    imagem: "/images/rpgs/So Aventuras - Tormenta 20.png",
+    imagem: "/images/rpgs/So Aventuras - Tormenta 20.webp",
     tags: ["aventuras"],
     recomendamos: true,
     editora: "Jambô",
@@ -65,7 +65,7 @@ export const rpgs = [
   {
     nome: "Noite do Necromante",
     autores: "Steve Jackson e Ian Livingstone",
-    imagem: "/images/rpgs/Noite do Necromante.png",
+    imagem: "/images/rpgs/Noite do Necromante.webp",
     tags: ["livro-jogo"],
     recomendamos: true,
     editora: "Jambô",
@@ -82,7 +82,7 @@ export const rpgs = [
   {
     nome: "A Masmorra da Morte",
     autores: "Ian Livingstone",
-    imagem: "/images/rpgs/A Masmorra da Morte.png",
+    imagem: "/images/rpgs/A Masmorra da Morte.webp",
     tags: ["livro-jogo"],
     recomendamos: true,
     editora: "Jambô",
@@ -98,7 +98,7 @@ export const rpgs = [
   {
     nome: "Exércitos da Morte",
     autores: "Ian Livingstone",
-    imagem: "/images/rpgs/Exercitos da Morte.png",
+    imagem: "/images/rpgs/Exercitos da Morte.webp",
     tags: ["livro-jogo"],
     recomendamos: true,
     editora: "Jambô",
@@ -116,7 +116,7 @@ export const rpgs = [
   {
     nome: "O Feiticeiro da Montanha de Fogo",
     autores: "Steve Jackson e Ian Livingstone",
-    imagem: "/images/rpgs/O Feiticeiro da Montanha de Fogo.png",
+    imagem: "/images/rpgs/O Feiticeiro da Montanha de Fogo.webp",
     tags: ["livro-jogo"],
     recomendamos: true,
     editora: "Jambô",

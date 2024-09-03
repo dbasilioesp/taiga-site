@@ -1,7 +1,7 @@
 ---
 title: "Mulheres, cultura e política"
 autores: "Angela Davis"
-imagem: "/images/livros/Mulheres, cultura e politica.jpg"
+imagem: "/images/livros/Mulheres, cultura e politica.webp"
 tags: ["romance", "afrofuturismo", "ficção"]
 ---
 

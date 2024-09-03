@@ -1,7 +1,7 @@
 ---
 title: "O pequeno manual antirracista"
 autores: "Djamila Ribeiro"
-imagem: "/images/livros/O pequeno manual antirracista.jpg"
+imagem: "/images/livros/O pequeno manual antirracista.webp"
 tags: []
 recomendamos: false
 ---

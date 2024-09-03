@@ -1,7 +1,7 @@
 ---
 title: "Boruto Next Generation"
 description: "meta description of the page"
-imagem: "/images/mangas/boruto.jpg"
+imagem: "/images/mangas/boruto.webp"
 tags: ["shonnen", "fantasia"]
 volumes:
   [

@@ -1,7 +1,7 @@
 ---
 title: "The Promised Neverland"
 description: ""
-imagem: "/images/mangas/the-promised-neverland-vol-1.jpg"
+imagem: "/images/mangas/the-promised-neverland-vol-1.webp"
 tags: []
 volumes:
   [

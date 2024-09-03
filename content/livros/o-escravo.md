@@ -1,7 +1,7 @@
 ---
 title: "O escravo"
 autores: "Carolina Maria de Jesus"
-imagem: "/images/livros/O escravo.jpg"
+imagem: "/images/livros/O escravo.webp"
 tags: []
 recomendamos: true
 ---

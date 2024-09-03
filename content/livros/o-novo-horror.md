@@ -1,7 +1,7 @@
 ---
 title: "O Novo Horror"
 autores: "Vários"
-imagem: "/images/livros/NovoHorror.jpeg"
+imagem: "/images/livros/NovoHorror.webp"
 tags: []
 recomendamos: false
 ---

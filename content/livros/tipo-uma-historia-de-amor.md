@@ -1,7 +1,7 @@
 ---
 title: "Tipo uma história de amor"
 autores: "Abdi Nazemian"
-imagem: "/images/livros/TipoUmaHistoriaDeAmor.jpg"
+imagem: "/images/livros/TipoUmaHistoriaDeAmor.webp"
 recomendamos: true
 tags: ["romance", "cultura", "estrangeiro"]
 editora: "HarperCollins"

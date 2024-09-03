@@ -1,6 +1,6 @@
 ---
 title: "Friren - A Jornada para o Além"
-imagem: "/images/mangas/frieren.jpeg"
+imagem: "/images/mangas/frieren.webp"
 tags: ["fantasia"]
 volumes:
   [

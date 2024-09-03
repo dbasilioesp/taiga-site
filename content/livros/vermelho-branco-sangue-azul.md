@@ -1,7 +1,7 @@
 ---
 title: "Vermelho, branco e sangue azul"
 autores: "Casey McQuiston"
-imagem: "/images/livros/Vermelho, branco e sangue azul.jpg"
+imagem: "/images/livros/Vermelho, branco e sangue azul.webp"
 tags: []
 recomendamos: false
 ---

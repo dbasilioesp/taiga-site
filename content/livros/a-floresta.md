@@ -1,7 +1,7 @@
 ---
 title: "A floresta"
 autores: "Daniel Gruber"
-imagem: "/images/livros/AFloresta.jpeg"
+imagem: "/images/livros/AFloresta.webp"
 tags: []
 recomendamos: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: "O pequeno príncipe"
 autores: "Antoine de saint-exupéry"
-imagem: "/images/livros/O pequeno principe.jpg"
+imagem: "/images/livros/O pequeno principe.webp"
 tags: []
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "O Código Da Vinci"
 autores: "Dan Brown"
-imagem: "/images/livros/o-codigo-da-vinci.jpg"
+imagem: "/images/livros/o-codigo-da-vinci.webp"
 tags: []
 recomendamos: false
 ---

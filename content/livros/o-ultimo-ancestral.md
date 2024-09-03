@@ -1,7 +1,7 @@
 ---
 title: "O Último Ancestral"
 autores: "Ale Santos"
-imagem: "/images/livros/OUltimoAncestral.jpg"
+imagem: "/images/livros/OUltimoAncestral.webp"
 tags: ["romance", "afrofuturismo", "ficção"]
 recomendamos: true
 editora: "HarperCollins"

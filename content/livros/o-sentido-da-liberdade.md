@@ -1,7 +1,7 @@
 ---
 title: "O sentido da liberdade"
 autores: "Angela Davis"
-imagem: "/images/livros/O sentido da liberdade.png"
+imagem: "/images/livros/O sentido da liberdade.webp"
 tags: ["politicas"]
 ---
 

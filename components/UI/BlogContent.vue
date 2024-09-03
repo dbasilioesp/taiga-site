@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class="blogContent">
-    <img :src="image" width="400" alt="" />
+    <NuxtImg :src="image" width="400" format="webp" quality="80" alt="" />
     <div>
       <div class="blogContent__grid mb-4">
         <UITag v-for="tag in tags" :key="tag">{{ tag }}</UITag>
@@ -45,6 +45,19 @@ defineProps({
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 500;
+}
+
+.blogContent__desc h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.blogContent__desc h2 a {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
 }
 
 .blogContent__desc ul {

@@ -1,7 +1,7 @@
 ---
 title: "A noite do cordeiro"
 autores: "Daniel Gruber"
-imagem: "/images/livros/ANoiteDoCordeiro.jpeg"
+imagem: "/images/livros/ANoiteDoCordeiro.webp"
 tags: []
 recomendamos: true
 ---

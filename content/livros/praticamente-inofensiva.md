@@ -1,7 +1,7 @@
 ---
 title: "Praticamente inofensiva (O mochileiro das galáxias – Livro 5)"
 autores: "Douglas Adams"
-imagem: "/images/livros/praticamente-inofensiva.png"
+imagem: "/images/livros/praticamente-inofensiva.webp"
 tags: []
 recomendamos: false
 ---

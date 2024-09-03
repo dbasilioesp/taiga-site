@@ -1,7 +1,7 @@
 ---
 title: "Drácula"
 autores: "Bram Stoker"
-imagem: "/images/livros/Dracula.png"
+imagem: "/images/livros/Dracula.webp"
 tags: []
 ---
 

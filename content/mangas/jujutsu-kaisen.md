@@ -1,6 +1,6 @@
 ---
 title: "Jujutsu Kaisen"
-imagem: "/images/mangas/jujutsu-kaisen.jpeg"
+imagem: "/images/mangas/jujutsu-kaisen.webp"
 tags: ["fantasia", "horror"]
 volumes:
   [

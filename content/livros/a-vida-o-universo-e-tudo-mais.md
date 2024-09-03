@@ -1,7 +1,7 @@
 ---
 title: "A Vida, o Universo e Tudo Mais - Mochileiro das Galáxias - Vol. 3"
 autores: "Douglas Adams"
-imagem: "/images/livros/a_vida_o_universo_tudomais.jpg"
+imagem: "/images/livros/a_vida_o_universo_tudomais.webp"
 tags: []
 recomendamos: false
 ---

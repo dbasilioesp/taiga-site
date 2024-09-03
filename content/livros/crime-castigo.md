@@ -1,7 +1,7 @@
 ---
 title: "Crime castigo"
 autores: "Fiódor Dostoiévski"
-imagem: "/images/livros/crime-castigo.jpg"
+imagem: "/images/livros/crime-castigo.webp"
 tags: []
 recomendamos: false
 ---

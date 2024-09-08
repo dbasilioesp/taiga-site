@@ -8,81 +8,70 @@ defineProps({
 </script>
 
 <template>
-  <div class="blogContent">
-    <NuxtImg :src="image" width="400" format="webp" quality="80" alt="" />
+  <div class="blog">
+    <div class="blog__grid">
+      <UITag v-for="tag in tags" :key="tag">{{ tag }}</UITag>
+    </div>
     <div>
-      <div class="blogContent__grid mb-4">
-        <UITag v-for="tag in tags" :key="tag">{{ tag }}</UITag>
-      </div>
-      <div
-        class="blogContent__desc"
-        v-html="description"
-        v-if="description"
-      ></div>
-      <ContentRenderer :value="doc" v-if="doc" class="blogContent__desc" />
-      <UIVolumeTable
-        v-if="doc?.volumes"
-        :volumes="doc.volumes"
-        class="blogContent__volumes"
+      <NuxtImg
+        :src="image"
+        v-if="image"
+        width="400"
+        format="webp"
+        quality="80"
+        alt=""
+        class="blog__banner mb-4"
       />
+      <div>
+        <b>Data da postagem</b>
+        : {{ doc.date }}
+      </div>
+      <div>
+        <b>Autores</b>
+        : {{ doc.autores.join(", ") }}
+      </div>
+    </div>
+    <div>
+      <div class="blog__text">
+        <div class="blog__desc" v-html="description" v-if="description"></div>
+        <ContentRenderer :value="doc" v-if="doc" class="article" />
+      </div>
     </div>
   </div>
 </template>
 
 <style>
-.blogContent {
+.blog {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.blogContent__grid {
+.blog__banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  align-self: start;
+  border-radius: 10px;
+}
+
+.blog__text {
+  max-width: 100ch;
+  width: 100%;
+}
+
+.blog__grid {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.blogContent__desc p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-
-.blogContent__desc h2 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.blogContent__desc h2 a {
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
-}
-
-.blogContent__desc ul {
-  margin-bottom: 20px;
-  padding-left: 20px;
-  font-weight: 500;
-}
-
-.blogContent__desc li {
-  list-style: disc;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.blogContent > img {
-  object-fit: contain;
-  align-self: start;
-}
-
-.blogContent__volumes {
+.blog__volumes {
   margin-top: 20px;
 }
 
 @media (max-width: 600px) {
-  .blogContent {
+  .blog {
     display: flex;
     flex-direction: column;
     gap: 40px;

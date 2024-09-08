@@ -35,6 +35,7 @@ onMounted(() => {
         <NuxtLink to="/mangas">Mangás</NuxtLink>
         <NuxtLink to="/rpgs">RPGs</NuxtLink>
         <NuxtLink to="/eventos">Eventos</NuxtLink>
+        <NuxtLink to="/blog">Blog</NuxtLink>
         <button
           type="button"
           @click="active = false"

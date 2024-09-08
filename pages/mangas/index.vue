@@ -11,27 +11,25 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="page py-9">
-    <div class="cbase">
-      <UIBreadcrumbs :items="breads" />
+  <UIPageContainer>
+    <UIBreadcrumbs :items="breads" />
 
-      <h1 class="text-7xl orange font-bold mb-4">Mangás</h1>
-      <p class="mb-8 text-lg">
-        Muitos dos mangás que temos são Shonnen, mas aos poucos vamos equilibrar
-        com outros genêros.
-      </p>
-      <div class="baseGrid">
-        <UIBookCard
-          v-for="item in mangas.data.value"
-          :key="item.title"
-          :title="item.title"
-          :author="item.autores"
-          :image="item.imagem"
-          :link="item._path"
-        />
-      </div>
+    <h1 class="text-7xl orange font-bold mb-4">Mangás</h1>
+    <p class="mb-8 text-lg">
+      Muitos dos mangás que temos são Shonnen, mas aos poucos vamos equilibrar
+      com outros genêros.
+    </p>
+    <div class="baseGrid">
+      <UIBookCard
+        v-for="item in mangas.data.value"
+        :key="item.title"
+        :title="item.title"
+        :author="item.autores"
+        :image="item.imagem"
+        :link="item._path"
+      />
     </div>
-  </div>
+  </UIPageContainer>
 </template>
 
 <style scoped></style>

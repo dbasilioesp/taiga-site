@@ -20,7 +20,7 @@ const breads = [
       <h1 class="page__title text-5xl pt-4 pb-6 font-bold orange capitalize">
         {{ rpg.nome }}
       </h1>
-      <UIBlogContent
+      <UIProductContent
         :image="rpg.imagem"
         :tags="rpg.tags"
         :description="rpg.descricao"

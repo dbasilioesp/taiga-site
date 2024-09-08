@@ -20,7 +20,7 @@ function getBreads(doc) {
           >
             {{ doc.title }}
           </h1>
-          <UIBlogContent :image="doc.imagem" :tags="doc.tags" :doc="doc" />
+          <UIProductContent :image="doc.imagem" :tags="doc.tags" :doc="doc" />
         </div>
       </div>
     </template>

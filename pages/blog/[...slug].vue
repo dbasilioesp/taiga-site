@@ -3,8 +3,8 @@ const route = useRoute();
 
 function getBreads(doc) {
   return [
-    { link: "/livros", label: "Livros" },
-    { link: `/livros/${route.params.slug}`, label: doc.title },
+    { link: "/blog", label: "Blog" },
+    { link: `/blog/${route.params.slug}`, label: doc.title },
   ];
 }
 </script>
@@ -20,7 +20,7 @@ function getBreads(doc) {
           >
             {{ doc.title }}
           </h1>
-          <UIProductContent :image="doc.imagem" :tags="doc.tags" :doc="doc" />
+          <UIBlogContent :image="doc.imagem" :tags="doc.tags" :doc="doc" />
         </div>
       </div>
     </template>
@@ -28,7 +28,7 @@ function getBreads(doc) {
       <div class="page pt-10 pb-14">
         <div class="cbase">
           <h1 class="font-bold text-5xl text-center my-20 underline">
-            Livro não encontrado.
+            Post não encontrado.
           </h1>
         </div>
       </div>

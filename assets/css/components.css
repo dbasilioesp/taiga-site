@@ -1,3 +1,11 @@
+/* 
+* Buttons
+* Box
+* Grids
+* Links
+* Post
+*/
+
 /* Buttons */
 
 .button-primary {
@@ -50,6 +58,12 @@
   }
 }
 
+.figureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
 /* Link */
 
 .link {
@@ -66,4 +80,43 @@
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 500;
+}
+
+.article p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: Roboto;
+}
+
+.article h1 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-block: 20px;
+}
+
+.article h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.article h2 a {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+.article ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.article li {
+  list-style: disc;
+  margin-bottom: 10px;
+  font-size: 18px;
 }

@@ -29,6 +29,20 @@
   place-items: center;
   width: 100%;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionC__col::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 400ms ease-out;
 }
 
 .sectionC__col span {
@@ -54,32 +68,25 @@
   width: 100%;
 }
 
-.sectionC__books {
-  padding: 1px;
-  height: 100%;
-  width: 100%;
+.sectionC__col:hover::before {
+  scale: 1.05;
+}
+
+.sectionC__books::before {
   background-image: var(--overlayGray), url("~/assets/images/Roxo.jpeg");
-  background-size: cover;
-  background-position: center;
 }
 
-.sectionC__mangas {
-  padding: 1px;
-  height: 100%;
-  width: 100%;
+.sectionC__mangas::before {
   background-image: var(--overlayGray), url("~/assets/images/boruto.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
-.sectionC__rpgs {
-  padding: 1px;
-  height: 100%;
-  width: 100%;
+.sectionC__rpgs::before {
   background-image: var(--overlayGray),
     url("~/assets/images/ordem_paranormal.jpg");
-  background-size: cover;
-  background-position: center;
+}
+
+.sectionC__col:hover {
+  background-size: calc(100% + 10px);
 }
 
 @media (max-width: 900px) {

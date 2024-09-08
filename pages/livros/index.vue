@@ -20,38 +20,21 @@ const breads = [{ link: "/livros", label: "Livros" }];
 </script>
 
 <template>
-  <div class="page py-9">
-    <div class="cbase">
-      <UIBreadcrumbs :items="breads" />
+  <UIPageContainer>
+    <UIBreadcrumbs :items="breads" />
 
-      <h1 class="text-7xl orange font-bold mb-6">Livros</h1>
+    <h1 class="text-7xl orange font-bold mb-6">Livros</h1>
 
-      <div class="colorbox recommendation">
-        <h2
-          class="recommendation__title text-4xl white font-bold mb-6 uppercase"
-        >
-          Recomendamos
-        </h2>
-        <p class="mb-8 text-lg white">
-          Quatro livros que gostariamos que nossos clientes lessem.
-        </p>
-        <div class="recommendation__grid">
-          <UIBookCard
-            v-for="book in recommendations"
-            :key="book.title"
-            :title="book.title"
-            :author="book.autores"
-            :image="book.imagem"
-            :link="book._path"
-          />
-        </div>
-      </div>
-
-      <h2 class="text-4xl font-bold mt-10 mb-10 uppercase">Mais livros</h2>
-
-      <div class="page__list baseGrid mb-10">
+    <div class="colorbox recommendation">
+      <h2 class="recommendation__title text-4xl white font-bold mb-6 uppercase">
+        Recomendamos
+      </h2>
+      <p class="mb-8 text-lg white">
+        Quatro livros que gostariamos que nossos clientes lessem.
+      </p>
+      <div class="recommendation__grid">
         <UIBookCard
-          v-for="book in others"
+          v-for="book in recommendations"
           :key="book.title"
           :title="book.title"
           :author="book.autores"
@@ -60,7 +43,20 @@ const breads = [{ link: "/livros", label: "Livros" }];
         />
       </div>
     </div>
-  </div>
+
+    <h2 class="text-4xl font-bold mt-10 mb-10 uppercase">Mais livros</h2>
+
+    <div class="page__list baseGrid mb-10">
+      <UIBookCard
+        v-for="book in others"
+        :key="book.title"
+        :title="book.title"
+        :author="book.autores"
+        :image="book.imagem"
+        :link="book._path"
+      />
+    </div>
+  </UIPageContainer>
 </template>
 
 <style scoped>

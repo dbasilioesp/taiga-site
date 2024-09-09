@@ -12,7 +12,7 @@ function getBreads(doc) {
 <template>
   <ContentDoc>
     <template v-slot="{ doc }">
-      <div class="page pt-10 pb-14">
+      <div class="page pt-10 pb-16">
         <div class="cbase">
           <UIBreadcrumbs :items="getBreads(doc)" />
           <h1

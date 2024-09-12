@@ -4,6 +4,29 @@
   font-family: Roboto, sans-serif;
 }
 
+.pageTitle {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  margin-block: 20px;
+  text-transform: capitalize;
+}
+
+.sectionTitle {
+  font-size: 1.85rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-block: 20px;
+}
+
+.topicTitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-block: 10px;
+}
+
 /* Containers */
 
 .cbase {

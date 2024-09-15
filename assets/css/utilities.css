@@ -27,6 +27,14 @@
   margin-block: 10px;
 }
 
+.topicTitle2 {
+  font-size: 1.5rem;
+  line-height: 1.333;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--orange);
+}
+
 /* Containers */
 
 .cbase {

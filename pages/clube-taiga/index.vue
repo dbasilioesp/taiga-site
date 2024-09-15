@@ -1,11 +1,25 @@
 <script setup>
+import Art from "/images/fichas/art.webp";
+import Salazar from "/images/fichas/salazar.webp";
+import Luna from "/images/fichas/luna.webp";
+
 useSeoMeta({
-  title: "Eventos",
+  title: "Clube Taiga",
 });
 
-const breads = [{ link: "/eventos", label: "Eventos" }];
+const breads = [{ link: "/clube-taiga", label: "Clube Taiga" }];
 
 const meets = [
+  {
+    date: "7 de Setembro de 2024",
+    groups: [
+      {
+        guide: "David",
+        system: "Tormenta",
+        characters: ["TODO: adicionar personagens."],
+      },
+    ],
+  },
   {
     date: "17 de Agosto de 2024",
     groups: [
@@ -60,13 +74,34 @@ const meets = [
     ],
   },
 ];
+
+const fichas = [
+  {
+    nome: "Art Flowers",
+    imagem: Art,
+    slug: "art",
+  },
+  {
+    nome: "Salazar Ankari",
+    imagem: Salazar,
+    slug: "salazar",
+  },
+  {
+    nome: "Luna, a Bastarda",
+    imagem: Luna,
+    slug: "luna",
+  },
+];
 </script>
 
 <template>
   <UIPageContainer>
     <UIBreadcrumbs :items="breads" />
 
-    <h1 class="text-7xl orange font-bold mb-8">Eventos</h1>
+    <h1 class="pageTitle yellow">Clube Taiga</h1>
+
+    <h2 class="sectionTitle">Eventos</h2>
+
     <div class="page__grid">
       <div class="article">
         <p>
@@ -94,7 +129,7 @@ const meets = [
     </div>
 
     <div>
-      <h2 class="text-2xl font-bold mb-2 orange">Encontros</h2>
+      <h3 class="topicTitle2">Encontros</h3>
       <div class="flex flex-wrap flex-col sm:flex-row gap-14">
         <UIMeetDay
           :meet="meet"
@@ -103,6 +138,20 @@ const meets = [
           class="mb-4"
         />
       </div>
+    </div>
+
+    <h2 class="sectionTitle">Fichas de Personagens</h2>
+
+    <div class="page__fichasGrid">
+      <NuxtLink
+        :to="'/clube-taiga/fichas/' + ficha.slug"
+        v-for="ficha in fichas"
+        :key="ficha.nome"
+        class="page__ficha"
+      >
+        <img :src="ficha.imagem" :alt="ficha.nome" />
+        <span>{{ ficha.nome }}</span>
+      </NuxtLink>
     </div>
   </UIPageContainer>
 </template>
@@ -114,6 +163,52 @@ const meets = [
   gap: 80px;
 }
 
+.page__fichasGrid {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.page__ficha {
+  position: relative;
+  width: 200px;
+}
+
+.page__ficha::before {
+  content: "";
+  display: block;
+  background-image: linear-gradient(to bottom, transparent, black);
+  opacity: 0.3;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.page__ficha img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.page__ficha span {
+  font-size: 24px;
+  position: absolute;
+  bottom: 10px;
+  left: 14px;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s linear;
+}
+
+.page__ficha:hover span {
+  color: var(--yellow);
+  letter-spacing: 0.4;
+}
+
 @media (max-width: 900px) {
   .page__grid {
     grid-template-columns: 1fr;
@@ -123,6 +218,6 @@ const meets = [
 
 .page__image {
   display: block;
-  margin-top: -60px;
+  /* margin-top: -60px; */
 }
 </style>

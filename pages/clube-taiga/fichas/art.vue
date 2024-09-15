@@ -1,6 +1,11 @@
 <script setup>
 import imagem from "/images/fichas/art.webp";
 
+const breads = [
+  { link: "/clube-taiga", label: "Clube Taiga" },
+  { link: `/clube-taiga/fichas/art`, label: "Art Flowers" },
+];
+
 const ficha = {
   nome: "Art Flowers",
   imagem,
@@ -58,6 +63,8 @@ const ficha = {
 
 <template>
   <UIPageContainer class="fichaOut">
+    <UIBreadcrumbs :items="breads" class="mb-9" />
+
     <UIFicha :ficha="ficha">
       <template #historia>
         <p>

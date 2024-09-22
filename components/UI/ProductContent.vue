@@ -11,11 +11,15 @@ defineProps({
   <div class="content">
     <NuxtImg :src="image" width="400" format="webp" quality="80" alt="" />
     <div>
-      <div class="content__grid mb-4">
+      <div class="content__grid mb-4" v-if="tags.length">
         <UITag v-for="tag in tags" :key="tag">{{ tag }}</UITag>
       </div>
+      <h2 class="topicTitle2 orange">Resumo</h2>
       <div class="content__desc" v-html="description" v-if="description"></div>
       <ContentRenderer :value="doc" v-if="doc" class="article" />
+      <div v-if="doc.autores" class="my-8 text-lg">
+        <b>Autores</b>: {{ doc.autores }}.
+      </div>
       <UIVolumeTable
         v-if="doc?.volumes"
         :volumes="doc.volumes"

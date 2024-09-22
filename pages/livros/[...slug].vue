@@ -16,7 +16,7 @@ function getBreads(doc) {
         <div class="cbase">
           <UIBreadcrumbs :items="getBreads(doc)" />
           <h1
-            class="page__title text-5xl pt-4 pb-6 font-bold orange capitalize"
+            class="page__title text-5xl pt-4 pb-8 font-bold orange capitalize"
           >
             {{ doc.title }}
           </h1>

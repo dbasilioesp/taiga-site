@@ -11,6 +11,26 @@ const breads = [{ link: "/clube-taiga", label: "Clube Taiga" }];
 
 const meets = [
   {
+    date: "14 de Setembro de 2024",
+    groups: [
+      {
+        guide: "Biamah",
+        system: "D&D 5e",
+        characters: [
+          "Loki, o Arqueiro Arcano",
+          "Salazar, o Mago",
+          "Wybie, o Bruxo",
+          "Leopoldo, o Guerreiro",
+          "Rodion, o Clérigo",
+          "Alex, o Guardião.",
+          "Kyrion, o Guerreiro",
+          "?, o Barbaro",
+          "Valdecir, o Druida",
+        ],
+      },
+    ],
+  },
+  {
     date: "7 de Setembro de 2024",
     groups: [
       {
@@ -24,7 +44,7 @@ const meets = [
     date: "17 de Agosto de 2024",
     groups: [
       {
-        guide: "Bia",
+        guide: "Biamah",
         system: "D&D 5e",
         characters: [
           "Loki, o Arqueiro Arcano",
@@ -42,7 +62,7 @@ const meets = [
     date: "3 de Agosto de 2024",
     groups: [
       {
-        guide: "Bia",
+        guide: "Biamah",
         system: "D&D 5e",
         characters: [
           "Loki, o Arqueiro Arcano",

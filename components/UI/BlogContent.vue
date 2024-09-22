@@ -10,9 +10,24 @@ defineProps({
 <template>
   <div class="blog">
     <div class="blog__grid">
-      <UITag v-for="tag in tags" :key="tag">{{ tag }}</UITag>
-    </div>
-    <div>
+      <div>
+        <div class="blog__tags">
+          <UITag v-for="tag in tags" :key="tag">{{ tag }}</UITag>
+        </div>
+
+        <div class="mb-4">
+          <b>Data da postagem</b>
+          : {{ doc.date }}<br />
+
+          <b>Autores</b>
+          : {{ doc.autores.join(", ") }}
+        </div>
+        <div class="blog__text">
+          <div class="blog__desc" v-html="description" v-if="description"></div>
+          <ContentRenderer :value="doc" v-if="doc" class="article" />
+        </div>
+      </div>
+
       <NuxtImg
         :src="image"
         v-if="image"
@@ -20,22 +35,9 @@ defineProps({
         format="webp"
         quality="80"
         alt=""
+        ku
         class="blog__banner mb-4"
       />
-      <div>
-        <b>Data da postagem</b>
-        : {{ doc.date }}
-      </div>
-      <div>
-        <b>Autores</b>
-        : {{ doc.autores.join(", ") }}
-      </div>
-    </div>
-    <div>
-      <div class="blog__text">
-        <div class="blog__desc" v-html="description" v-if="description"></div>
-        <ContentRenderer :value="doc" v-if="doc" class="article" />
-      </div>
     </div>
   </div>
 </template>
@@ -47,11 +49,16 @@ defineProps({
   gap: 20px;
 }
 
+.blog__tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
 .blog__banner {
   width: 100%;
-  max-height: 300px;
   object-fit: cover;
-  align-self: start;
+  object-position: center bottom;
   border-radius: 10px;
 }
 
@@ -61,9 +68,9 @@ defineProps({
 }
 
 .blog__grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
 }
 
 .blog__volumes {

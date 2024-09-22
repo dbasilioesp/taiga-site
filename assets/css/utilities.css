@@ -71,6 +71,10 @@
   color: var(--yellow);
 }
 
+.purple {
+  color: var(--purple);
+}
+
 /* Shadows */
 
 .shadow-text {

@@ -17,8 +17,8 @@ defineProps({
       <h2 class="topicTitle2 orange">Resumo</h2>
       <div class="content__desc" v-html="description" v-if="description"></div>
       <ContentRenderer :value="doc" v-if="doc" class="article" />
-      <div v-if="doc.autores" class="my-8 text-lg">
-        <b>Autores</b>: {{ doc.autores }}.
+      <div v-if="doc?.autores" class="my-8 text-lg">
+        <b>Escrito por</b>: {{ doc.autores }}.
       </div>
       <UIVolumeTable
         v-if="doc?.volumes"

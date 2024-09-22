@@ -20,7 +20,9 @@ const breads = [{ link: "/blog", label: "Blog" }];
     </p>
     <ul class="post__grid">
       <li v-for="post in posts" :key="post.title" class="post__item">
-        <a :href="post._path"><img :src="post.imagem" :alt="post.title" /></a>
+        <a :href="post._path" class="post__imagebox">
+          <img :src="post.imagem" :alt="post.title" />
+        </a>
         <a :href="post._path" class="link text-2xl">{{ post.title }}</a>
         <p>{{ post.description }}</p>
         <p>
@@ -47,16 +49,24 @@ const breads = [{ link: "/blog", label: "Blog" }];
   padding-block: 20px;
 }
 
-.post__item img {
+.post__imagebox {
+  display: block;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.post__imagebox img {
   height: 300px;
   aspect-ratio: 3 / 2;
-  margin-bottom: 10px;
   border-radius: 4px;
   object-fit: cover;
+  transition: all 200ms ease-out;
 }
 
 .post__item:hover img {
-  scale: 1.1;
+  scale: 1.05;
 }
 
 @container post (max-width: 680px) {

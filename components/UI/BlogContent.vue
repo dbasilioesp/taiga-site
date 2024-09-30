@@ -10,7 +10,7 @@ defineProps({
 <template>
   <div class="blog">
     <div class="blog__grid">
-      <div>
+      <div class="blog__grid_A">
         <div class="blog__tags">
           <UITag v-for="tag in tags" :key="tag">{{ tag }}</UITag>
         </div>
@@ -60,6 +60,7 @@ defineProps({
   object-fit: cover;
   object-position: center bottom;
   border-radius: 10px;
+  grid-area: b;
 }
 
 .blog__text {
@@ -71,17 +72,27 @@ defineProps({
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 40px;
+  grid-template-areas: "a b";
 }
 
 .blog__volumes {
   margin-top: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   .blog {
     display: flex;
     flex-direction: column;
     gap: 40px;
+  }
+
+  .blog__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "b" "a";
+  }
+
+  .blog__banner {
+    width: auto;
   }
 }
 </style>

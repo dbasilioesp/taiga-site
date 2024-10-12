@@ -3,7 +3,7 @@ title: "Roxo"
 autores: "Andréa Berriell"
 imagem: "/images/livros/Roxo.webp"
 tags: ["romance", "afrofuturismo", "ficção"]
-recomendamos: true
+recomendamos: false
 editora: "Grifo"
 ---
 

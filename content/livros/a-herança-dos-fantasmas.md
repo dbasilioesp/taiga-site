@@ -2,6 +2,7 @@
 title: "A Herança dos Fantasmas"
 autores: "Rivers Solomon"
 imagem: "/images/livros/a-heranca-dos-fantasmas.webp"
+recomendamos: true
 tags: []
 ---
 

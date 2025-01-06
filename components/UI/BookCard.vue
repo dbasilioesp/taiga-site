@@ -18,7 +18,7 @@ const props = defineProps({
       quality="80"
     />
     <h2 class="card__title">{{ props.title }}</h2>
-    <span class="card__author font-semibold">{{ props.author }}</span>
+    <span class="card__author">{{ props.author }}</span>
   </NuxtLink>
 </template>
 
@@ -34,23 +34,28 @@ const props = defineProps({
 }
 
 .card__image {
-  height: 250px;
+  height: 300px;
   object-fit: contain;
   object-position: left;
-  border-radius: 4px;
+  filter: var(--dropShadow);
+  /* border-radius: 6px; */
 }
 
 .card__title {
   margin-top: 10px;
-  margin-bottom: 2px;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 700;
+  margin-bottom: 0px;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 500;
   color: inherit;
 }
 
 .card__author {
   color: inherit;
+  font-size: 14px;
+  margin-top: 0;
+  display: block;
+  color: var(--textGrey);
 }
 
 @media (max-width: 600px) {

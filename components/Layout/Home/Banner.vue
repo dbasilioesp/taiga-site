@@ -2,39 +2,36 @@
 
 <template>
   <div class="banner">
-    <h1 class="banner__title text-7xl yellow font-bold">Taiga</h1>
-    <p class="banner__desc">
-      Somos uma livraria que procura inspirar a nova joventude, escolhendo
-      títulos inovadores e que conversem com os novos tempos.
-    </p>
+    <div class="banner__wrap cbase">
+      <div class="banner__lft">
+        <h1 class="banner__title black bannerTitle">
+          <span>Conheça a</span> Taiga
+        </h1>
+        <p class="banner__desc">
+          Somos uma livraria que procura inspirar a nova juventude, escolhendo
+          títulos inovadores e que conversem com os novos tempos.
+        </p>
+        <RouterLink to="/catalogo" class="buttonPrimary is-black"
+          >Veja mais</RouterLink
+        >
+      </div>
+      <figure>
+        <img class="banner__img bidImage" src="~/assets/images/bib4.jpg" />
+        <figcaption>
+          Imagem de
+          <a
+            href="https://pixabay.com/pt/users/jensenartofficial-31380959/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7628308"
+            >Jensen Art Co</a
+          >
+          por
+          <a
+            href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7628308"
+            >Pixabay</a
+          >
+        </figcaption>
+      </figure>
+    </div>
   </div>
 </template>
 
-<style scoped>
-.banner {
-  padding-top: var(--headerHeight);
-  height: max(400px, 40vw);
-  background-image: var(--overlayPurple), url("~/assets/images/home-banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.banner__title {
-  text-shadow: var(--shadowText);
-  margin-block-start: -60px;
-  margin-block-end: 20px;
-}
-
-.banner__desc {
-  color: white;
-  max-width: 470px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 20px;
-}
-</style>
+<style src="./banner.css"></style>

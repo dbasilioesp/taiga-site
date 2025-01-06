@@ -118,12 +118,11 @@ const fichas = [
   <UIPageContainer>
     <UIBreadcrumbs :items="breads" />
 
-    <h1 class="pageTitle yellow">Clube Taiga</h1>
-
-    <h2 class="sectionTitle">Eventos</h2>
+    <h1 class="pageTitle">Clube Taiga</h1>
 
     <div class="page__grid">
       <div class="article">
+        <h2>Eventos</h2>
         <p>
           Somos grandes fãs de jogos de tabuleiro e RPGs de mesa, por isso
           organizamos eventos geralmente aos sábados para nossa comunidade poder
@@ -134,44 +133,12 @@ const fichas = [
           Estamos abertos para ajudar a organizar torneios de diversos jogos,
           como xadrez, MTG (Magic The Gathering), Pokemon Cards, entre outros.
         </p>
-        <h2 class="text-2xl font-bold mb-2">Contato</h2>
-        <p>
-          Caso tenha interesse em participar, venha até nossa loja na Rua
-          Gaviões 880 - Alvorada RS, ou entre em contato pelo Whatsapp 51
-          984841686.
-        </p>
       </div>
       <img
         src="~/assets/images/loja.jpeg"
         alt=""
-        class="page__image rounded-md"
+        class="page__image bidImage"
       />
-    </div>
-
-    <div>
-      <h3 class="topicTitle2">Encontros</h3>
-      <div class="flex flex-wrap flex-col sm:flex-row gap-14">
-        <UIMeetDay
-          :meet="meet"
-          v-for="meet in meets"
-          :key="meet.date"
-          class="mb-4"
-        />
-      </div>
-    </div>
-
-    <h2 class="sectionTitle">Fichas de Personagens</h2>
-
-    <div class="page__fichasGrid">
-      <NuxtLink
-        :to="'/clube-taiga/fichas/' + ficha.slug"
-        v-for="ficha in fichas"
-        :key="ficha.nome"
-        class="page__ficha"
-      >
-        <img :src="ficha.imagem" :alt="ficha.nome" />
-        <span>{{ ficha.nome }}</span>
-      </NuxtLink>
     </div>
   </UIPageContainer>
 </template>
@@ -179,8 +146,13 @@ const fichas = [
 <style scoped>
 .page__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   gap: 80px;
+}
+
+.page__grid > .article {
+  max-width: 50ch;
+  width: 100%;
 }
 
 .page__fichasGrid {
@@ -241,3 +213,29 @@ const fichas = [
   /* margin-top: -60px; */
 }
 </style>
+
+<!-- <div>
+      <h3 class="topicTitle2">Encontros</h3>
+      <div class="flex flex-wrap flex-col sm:flex-row gap-14">
+        <UIMeetDay
+          :meet="meet"
+          v-for="meet in meets"
+          :key="meet.date"
+          class="mb-4"
+        />
+      </div>
+    </div> -->
+
+<!-- <h2 class="sectionTitle">Fichas de Personagens</h2>
+
+    <div class="page__fichasGrid">
+      <NuxtLink
+        :to="'/clube-taiga/fichas/' + ficha.slug"
+        v-for="ficha in fichas"
+        :key="ficha.nome"
+        class="page__ficha"
+      >
+        <img :src="ficha.imagem" :alt="ficha.nome" />
+        <span>{{ ficha.nome }}</span>
+      </NuxtLink>
+    </div> -->

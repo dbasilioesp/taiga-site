@@ -10,11 +10,11 @@ defineProps({
 <template>
   <div class="content">
     <NuxtImg :src="image" width="400" format="webp" quality="80" alt="" />
-    <div>
-      <div class="content__grid mb-4" v-if="tags.length">
+    <div class="content__content">
+      <div class="content__tags mb-4" v-if="tags.length">
         <UITag v-for="tag in tags" :key="tag">{{ tag }}</UITag>
       </div>
-      <h2 class="topicTitle2 orange">Resumo</h2>
+      <h2 class="topicTitle2 textGrey">Resumo</h2>
       <div class="content__desc" v-html="description" v-if="description"></div>
       <ContentRenderer :value="doc" v-if="doc" class="article" />
       <div v-if="doc?.autores" class="my-8 text-lg">
@@ -35,7 +35,11 @@ defineProps({
   gap: 40px;
 }
 
-.content__grid {
+.content__content {
+  max-width: 60ch;
+}
+
+.content__tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -44,6 +48,8 @@ defineProps({
 .content > img {
   object-fit: contain;
   align-self: start;
+  max-width: 50%;
+  border-radius: 10px;
 }
 
 .content__volumes {

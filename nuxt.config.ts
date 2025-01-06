@@ -6,11 +6,6 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxt/image"],
   postcss: {},
-  tailwindcss: {
-    exposeConfig: true,
-    viewer: true,
-    // and more...
-  },
   app: {
     head: {
       title: "Taiga Livraria",

@@ -1,24 +1,29 @@
-<script setup>
-const props = defineProps({
-  home: Boolean,
-});
-</script>
+<script setup></script>
 
 <template>
-  <footer class="footer" :class="{ home }">
-    <div class="footer__inner cbase">
-      <p class="text-base white">
-        Localização: Rua Gavião, 880 - Alvorada - RS.<br />
-        Telefone: 51 98484.1686
-      </p>
-      <div>
-        <a
-          href="https://www.instagram.com/livrariataiga/"
-          target="_blank"
-          class="footer__social"
-        >
-          <IconInstagram width="36px" height="36px" />
-        </a>
+  <footer class="footer">
+    <div class="cbase">
+      <h3 class="pageTitle">Onde nos encontrar</h3>
+      <div class="footer__wrap">
+        <div>
+          <p>
+            Atuamos pelos bairros de Alvorada como vendedores ambulantes.
+            Divulgaremos pelas redes sociais o local e data que estaremos
+            vendendo.
+          </p>
+        </div>
+        <div>
+          <p class="text-base white mb-4">Telefone: 51 98484.1686</p>
+          <div>
+            <a
+              href="https://www.instagram.com/livrariataiga/"
+              target="_blank"
+              class="footer__social"
+            >
+              <IconInstagram width="36px" height="36px" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -26,15 +31,16 @@ const props = defineProps({
 
 <style scoped>
 .footer {
-  padding: 30px 40px;
+  padding: 80px 0 180px;
   background-color: var(--darkgrey);
+  color: white;
 }
 
-.footer__inner {
-  display: flex;
-  flex-direction: column;
+.footer__wrap {
+  display: grid;
+  grid-template-columns: 50ch 1fr;
   justify-content: center;
-  gap: 20px;
+  gap: 60px;
 }
 
 .footer.home .footer__inner {
@@ -49,5 +55,12 @@ const props = defineProps({
 
 .footer__social:hover {
   color: var(--yellow);
+}
+
+@media (max-width: 1200px) {
+  .footer__wrap {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

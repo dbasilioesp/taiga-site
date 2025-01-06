@@ -14,13 +14,13 @@ const breads = [{ link: "/blog", label: "Blog" }];
 <template>
   <UIPageContainer class="post">
     <UIBreadcrumbs :items="breads" />
-    <h1 class="text-7xl orange font-bold mb-4">Blog</h1>
+    <h1 class="pageTitle mb-4">Blog</h1>
     <p class="mb-8 text-lg">
       Postamos aqui conteúdos que vão ajudar a entender melhor a Taiga.
     </p>
     <ul class="post__grid">
       <li v-for="post in posts" :key="post.title" class="post__item">
-        <a :href="post._path" class="post__imagebox">
+        <a :href="post._path" class="post__imagebox dropShadow">
           <img :src="post.imagem" :alt="post.title" />
         </a>
         <a :href="post._path" class="link text-2xl">{{ post.title }}</a>
@@ -41,7 +41,8 @@ const breads = [{ link: "/blog", label: "Blog" }];
 .post__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  column-gap: 50px;
+  row-gap: 30px;
 }
 
 .post__item {
@@ -60,7 +61,8 @@ const breads = [{ link: "/blog", label: "Blog" }];
 .post__imagebox img {
   height: 300px;
   aspect-ratio: 3 / 2;
-  border-radius: 4px;
+  /* border-radius: 4px; */
+  /* translate: -4px -4px; */
   object-fit: cover;
   transition: all 200ms ease-out;
 }

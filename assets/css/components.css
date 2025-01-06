@@ -8,25 +8,33 @@
 
 /* Buttons */
 
-.button-primary {
+.buttonPrimary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: var(--yellow);
   color: white;
-  height: 60px;
-  font-weight: 500;
-  font-size: 20px;
+  height: 50px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  border-radius: 3px;
+  border-radius: 10px;
   transition: all 0.3s ease;
-  padding: 0 40px;
+  padding: 0 20px;
+  font-family: var(--fontTitle);
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
 }
 
-.button-primary:hover {
+.buttonPrimary:hover {
   background-color: var(--orange);
+}
+
+.buttonPrimary.is-black {
+  background-color: #030712;
+  color: white;
 }
 
 /* Box */
@@ -44,34 +52,20 @@
   }
 }
 
-/* Grids */
-
-.baseGrid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: min(4vw, 30px);
-}
-
-@media (max-width: 600px) {
-  .baseGrid {
-    gap: min(4vw, 15px);
-  }
-}
-
-.figureGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
 /* Link */
-
 .link {
   color: var(--orange);
 }
 
 .link:hover {
   text-decoration: underline;
+}
+
+/* Figure */
+
+.bidImage {
+  border-radius: 20px;
+  filter: var(--dropShadow);
 }
 
 /* Post */
@@ -85,7 +79,7 @@
   line-height: 1.5;
   margin-bottom: 20px;
   font-weight: 400;
-  font-family: Roboto;
+  font-family: var(--fontText);
   letter-spacing: 0.2px;
 }
 
@@ -94,6 +88,7 @@
   line-height: 1.2;
   font-weight: 600;
   margin-block: 20px;
+  font-family: var(--fontTitle);
 }
 
 .article h1:not(:first-child) {
@@ -106,6 +101,7 @@
   font-weight: 700;
   margin-bottom: 20px;
   margin-top: 30px;
+  font-family: var(--fontTitle);
 }
 
 .article h3 {
@@ -113,6 +109,7 @@
   line-height: 1.75rem;
   font-weight: 700;
   margin-bottom: 10px;
+  font-family: var(--fontTitle);
 }
 
 .article h2 a {
@@ -144,6 +141,7 @@
   list-style: disc;
   margin-bottom: 10px;
   font-size: 18px;
+  font-family: var(--fontTitle);
 }
 
 .history {
@@ -163,7 +161,7 @@
   letter-spacing: 0.2px;
 }
 
-.article a {
+.article a:not([href^="#"]) {
   color: var(--yellow);
 }
 

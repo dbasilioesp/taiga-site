@@ -1,8 +1,4 @@
 <script setup>
-// setPageLayout("home");
-definePageMeta({
-  layout: "home",
-});
 useSeoMeta({
   title: "Início",
 });
@@ -11,9 +7,7 @@ useSeoMeta({
 <template>
   <div>
     <LayoutHomeBanner />
-    <LayoutHomeSection1 />
-    <LayoutHomeSection3 />
-    <LayoutHomeEventos />
+    <LayoutHomeSobre />
   </div>
 </template>
 

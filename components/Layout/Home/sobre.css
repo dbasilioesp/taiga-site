@@ -1,0 +1,45 @@
+.about {
+  padding-top: 160px;
+  padding-bottom: 120px;
+  background-color: #292524;
+  color: white;
+}
+
+.about__wrap {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about__figure {
+  position: relative;
+}
+
+.about__figure figcaption {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  opacity: 0.5;
+}
+
+.about__figure img {
+  border-radius: 30px;
+  /* width: 400px; */
+  flex: 1;
+  justify-self: end;
+}
+
+.about__title {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    padding-block: 100px 60px;
+  }
+
+  .about__wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}

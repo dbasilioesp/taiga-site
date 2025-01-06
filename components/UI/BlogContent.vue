@@ -9,35 +9,9 @@ defineProps({
 
 <template>
   <div class="blog">
-    <div class="blog__grid">
-      <div class="blog__grid_A">
-        <div class="blog__tags">
-          <UITag v-for="tag in tags" :key="tag">{{ tag }}</UITag>
-        </div>
-
-        <div class="mb-4">
-          <b>Data da postagem</b>
-          : {{ doc.date }}<br />
-
-          <b>Autores</b>
-          : {{ doc.autores.join(", ") }}
-        </div>
-        <div class="blog__text">
-          <div class="blog__desc" v-html="description" v-if="description"></div>
-          <ContentRenderer :value="doc" v-if="doc" class="article" />
-        </div>
-      </div>
-
-      <NuxtImg
-        :src="image"
-        v-if="image"
-        width="400"
-        format="webp"
-        quality="80"
-        alt=""
-        ku
-        class="blog__banner mb-4"
-      />
+    <div class="blog__text">
+      <div class="blog__desc" v-html="description" v-if="description"></div>
+      <ContentRenderer :value="doc" v-if="doc" class="article" />
     </div>
   </div>
 </template>
@@ -47,6 +21,12 @@ defineProps({
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
+.blog b {
+  font-family: var(--fontTitle);
 }
 
 .blog__tags {
@@ -77,6 +57,12 @@ defineProps({
 
 .blog__volumes {
   margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .blog {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 760px) {

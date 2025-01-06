@@ -1,24 +1,6 @@
 export const rpgs = [
   {
-    nome: "Ordem Paranormal",
-    autores: "Cellbit - Yabu - Akila",
-    imagem: "/images/rpgs/Ordem Paranormal.webp",
-    recomendamos: true,
-    tags: ["playbook", "sobrenatural"],
-    editora: "Jamboô",
-    slug: "ordem-paranormal",
-    descricao: `
-      <p><span class="font-bold">Os perigos do Outro Lado</span></p>
-      <p>O paranormal não vem para o nosso mundo de maneira fácil. Uma membrana separa e protege a Realidade do Outro Lado, a dimensão dos monstros e demônios. Essa barreira, porém, pode ser enfraquecida pelo Medo. Se aproveitando disso, cultistas fazem rituais para romper a membrana e invocar seres sobrenaturais, causando caos e destruição.</p>
-      <p>Para impedir que esses planos malignos se concretizem, organizações de investigadores se mantêm em atividade por todo o globo. Contra o paranormal, esses agentes são nossa primeira e última linha de defesa.</p>
-      <p>Neste RPG, você assume o papel de agente de uma dessas organizações, a Ordo Realitas, vivendo uma vida dupla enquanto se esforça para evitar a vitória do caos. Fazendo uso de sua sagacidade, de um arsenal tecnológico ou mesmo de poderes vindos do Outro Lado, cabe a você arriscar a sua vida para proteger o nosso mundo.</p>
-      <p>O jogo tem tudo que seu grupo precisa para viver suas próprias missões no cenário criado por Cellbit e desenvolvido por um grupo de game designers premiados e veteranos, com mais de uma década de experiência publicando jogos de RPG.</p>
-      <p>Agora, o destino do mundo está em suas mãos…</p>
-      <p><span class="font-bold">Escrito por:</span> Dan Ramos, Felipe Della Corte, Guilherme Dei Svaldi, Pedro Coimbra, Rafael Dei Svaldi, Rafael Lange, Silvia Sala.</p>
-      <p><span class="font-bold">Ilustrador por</span>: Akila Gabriel, Danilo Murakami (Orenjiro), Dan Ramos, Kael, Jottah Designer</p>`,
-  },
-  {
-    nome: "Tormenta 20",
+    title: "Tormenta 20",
     autores: "Caldela - Cassaro - Trevisan - Irmãos Svaldi",
     imagem: "/images/rpgs/Tormenta 20.webp",
     tags: ["playbook", "fantasia medieval"],
@@ -36,7 +18,7 @@ export const rpgs = [
     <p><a class="link" target="_blank" href="https://pt.wikipedia.org/wiki/Tormenta_(RPG)">https://pt.wikipedia.org/wiki/Tormenta_(RPG)</p>`,
   },
   {
-    nome: "Só Aventuras - Tormenta 20",
+    title: "Só Aventuras - Tormenta 20",
     autores: "Caldela - Cassaro - Trevisan - Irmãos Svaldi",
     imagem: "/images/rpgs/So Aventuras - Tormenta 20.webp",
     tags: ["aventuras"],
@@ -63,24 +45,7 @@ export const rpgs = [
     `,
   },
   {
-    nome: "Noite do Necromante",
-    autores: "Steve Jackson e Ian Livingstone",
-    imagem: "/images/rpgs/Noite do Necromante.webp",
-    tags: ["livro-jogo"],
-    recomendamos: true,
-    editora: "Jambô",
-    slug: "noite-do-necromante",
-    descricao: `
-    <h3 class="text-xl font-bold mb-4">Uma aventura em que VOCÊ é o herói!</h3>
-    <p>O que vem depois da morte? Você era um nobre cavaleiro e passou anos longe de seu castelo, lutando em uma cruzada contra forças das trevas, para então ser morto por um bando de assassinos na volta para casa. Inconformado com o próprio fim, você se tornou um fantasma.</p>
-    <p>Por que você foi assassinado? A mando de quem? Essas dúvidas o assombram enquanto VOCÊ busca resolver o mistério de sua própria morte ao longo de uma única noite...</p>
-    <h3 class="text-xl font-bold mb-4">Mais informações</h3>
-    <p>A série criada por Steve Jackson e Ian Livingstone, Fighting Fantasy, ou Aventuras Fantásticas para os fãs mais experientes, é um clássico dos livros-jogos, com mais de 20 milhões de cópias vendidas ao redor do mundo. Cada livro traz uma aventura isolada, para você se divertir pelo mundo fantástico de Titan. Tudo o que você precisa para embarcar nessa aventura são dois dados, lápis e borracha!</p>
-    <p>Noite do Necromante é o 27° volume de Fighting Fantasy, onde cada livro funciona isoladamente. Conheça os outros volumes da série aqui.</p>
-    `,
-  },
-  {
-    nome: "A Masmorra da Morte",
+    title: "A Masmorra da Morte",
     autores: "Ian Livingstone",
     imagem: "/images/rpgs/A Masmorra da Morte.webp",
     tags: ["livro-jogo"],
@@ -96,7 +61,7 @@ export const rpgs = [
     `,
   },
   {
-    nome: "Exércitos da Morte",
+    title: "Exércitos da Morte",
     autores: "Ian Livingstone",
     imagem: "/images/rpgs/Exercitos da Morte.webp",
     tags: ["livro-jogo"],
@@ -114,7 +79,7 @@ export const rpgs = [
     `,
   },
   {
-    nome: "O Feiticeiro da Montanha de Fogo",
+    title: "O Feiticeiro da Montanha de Fogo",
     autores: "Steve Jackson e Ian Livingstone",
     imagem: "/images/rpgs/O Feiticeiro da Montanha de Fogo.webp",
     tags: ["livro-jogo"],

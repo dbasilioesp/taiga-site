@@ -4,7 +4,7 @@ useSeoMeta({
 });
 
 const { data } = await useAsyncData("blog", () =>
-  queryContent("blog").sort({ title: 1 }).find()
+  queryContent("blog").sort({ date: -1 }).find()
 );
 const posts = data.value.filter((i) => !i.disabled);
 
@@ -26,7 +26,7 @@ const breads = [{ link: "/blog", label: "Blog" }];
         <a :href="post._path" class="link text-2xl">{{ post.title }}</a>
         <p>{{ post.description }}</p>
         <p>
-          <small>{{ post.date }}</small>
+          <small>{{ getDateLabel(post.date) }}</small>
         </p>
       </li>
     </ul>

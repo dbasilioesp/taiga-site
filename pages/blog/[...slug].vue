@@ -31,7 +31,7 @@ function getBreads(doc) {
 
               <div class="my-4">
                 <div class="flex align-center gap-2 mb-4">
-                  <IconCalendar /> {{ doc.date }}
+                  <IconCalendar /> {{ getDateLabel(doc.date) }}
                 </div>
                 <div class="flex align-center gap-2">
                   <IconEditAuthor /> {{ doc.autores.join(", ") }}
@@ -77,6 +77,7 @@ function getBreads(doc) {
 }
 
 .page__grid img {
+  object-fit: cover;
   justify-self: center;
   border-radius: 20px;
   width: auto;

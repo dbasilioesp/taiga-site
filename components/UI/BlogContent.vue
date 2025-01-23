@@ -21,7 +21,7 @@ defineProps({
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 60ch;
+  max-width: 74ch;
   margin-inline: auto;
 }
 
@@ -62,6 +62,10 @@ defineProps({
 @media (max-width: 1200px) {
   .blog {
     max-width: 100%;
+  }
+
+  .blog__text {
+    max-width: 70ch;
   }
 }
 

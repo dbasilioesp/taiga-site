@@ -1,3 +1,58 @@
+export const CLASSES = [
+  {
+    name: 'Artifice',
+    image: 'https://5e.tools/img/classes/TCE/Artificer.webp'
+  },
+  {
+    name: 'Bárbaro',
+    image: 'https://5e.tools/img/classes/PHB/Barbarian.webp'
+  },
+  {
+    name: 'Bardo',
+    image: 'https://5e.tools/img/classes/PHB/Bard.webp'
+  },
+  {
+    name: 'Clérigo',
+    image: 'https://5e.tools/img/classes/PHB/Cleric.webp'
+  },
+  {
+    name: 'Druida',
+    image: 'https://5e.tools/img/classes/PHB/Druid.webp'
+  },
+  {
+    name: 'Guerreiro',
+    image: 'https://5e.tools/img/classes/PHB/Fighter.webp'
+  },
+  {
+    name: 'Monge',
+    image: 'https://5e.tools/img/classes/PHB/Monk.webp'
+  },
+  {
+    name: 'Paladino',
+    image: 'https://5e.tools/img/classes/PHB/Paladin.webp'
+  },
+  {
+    name: 'Patrulheiro / Guardião',
+    image: 'https://5e.tools/img/classes/PHB/Ranger.webp'
+  },
+  {
+    name: 'Ladino',
+    image: 'https://5e.tools/img/classes/PHB/Rogue.webp'
+  },
+  {
+    name: 'Feiticeiro',
+    image: 'https://5e.tools/img/classes/PHB/Sorcerer.webp'
+  },
+  {
+    name: 'Bruxa',
+    image: 'https://5e.tools/img/classes/PHB/Warlock.webp'
+  },
+  {
+    name: 'Mago',
+    image: 'https://5e.tools/img/classes/PHB/Wizard.webp'
+  }
+]
+
 export const ORIGINS = [
     {
       name: "Aarakocra",
@@ -167,7 +222,10 @@ export const ORIGINS = [
       name: "Sátiro",
       image: "https://5e.tools/img/races/MPMM/Satyr.webp",
     },
-  
+    {
+      name: "Verdano",
+      image: "https://5e.tools/img/races/AI/Verdan.webp",
+    },
     {
       name: "Shifter/Transmorfo",
       image: "https://5e.tools/img/races/MPMM/Shifter.webp",
@@ -199,9 +257,5 @@ export const ORIGINS = [
     {
       name: "Vedalkeano",
       image: "https://5e.tools/img/races/GGR/Vedalken.webp",
-    },
-    {
-      name: "Verdano",
-      image: "https://5e.tools/img/races/AI/Verdan.webp",
     },
   ];

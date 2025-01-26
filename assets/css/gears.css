@@ -104,6 +104,15 @@
   }
 }
 
+.wrapText {
+  max-width: 75ch;
+}
+
+.containerText {
+  max-width: 75ch;
+  margin-inline: auto;
+}
+
 /* Grids */
 
 .baseGrid {
@@ -129,6 +138,14 @@
   .figureGrid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+}
+
+.rollGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px 30px;
+  margin-top: 60px;
 }
 
 /* Container query */

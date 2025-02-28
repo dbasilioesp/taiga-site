@@ -48,7 +48,6 @@ function getLink(item) {
 
   slug = split[split.length - 1];
   category = split[1];
-  console.log(category);
 
   return `/catalogo/${category}-${slug}`;
 }

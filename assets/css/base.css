@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Faculty+Glyphic&display=swap");
-
 :root {
   /* Spaces */
   --headerHeight: 110px;
   --container: 1600px;
 
   --fontTitle: Faculty Glyphic, sans-serif;
-  --fontText: Gotham, sans-serif;
+  --fontText: "Metropolis", sans-serif;
   --fontDisplay: "Times New Roman", Times, serif;
 
   /* Colors */
@@ -24,36 +22,16 @@
   --dropShadow: drop-shadow(4px 4px var(--textGrey));
 
   /* Overlay */
-  --overlayPurple: linear-gradient(to right,
-      color(from var(--purple) srgb r g b / 0.8) 0%,
-      color(from var(--purple) srgb r g b / 0.8) 100%);
-  --overlayGray: linear-gradient(to right,
-      color(from var(--darkgrey) srgb r g b / 0.8) 0%,
-      color(from var(--darkgrey) srgb r g b / 0.8) 100%);
-}
-
-@font-face {
-  font-family: "Gotham";
-  font-weight: 300;
-  src: url("~/assets/fonts/Gotham/Gotham/Gotham-Light.otf") format("oft");
-}
-
-@font-face {
-  font-family: "Gotham";
-  font-weight: 400;
-  src: url("~/assets/fonts/Gotham/Gotham/Gotham-Book.otf") format("oft");
-}
-
-@font-face {
-  font-family: "Gotham";
-  font-weight: 500;
-  src: url("~/assets/fonts/Gotham/Gotham/Gotham-Medium.otf") format("oft");
-}
-
-@font-face {
-  font-family: "Gotham";
-  font-weight: 900;
-  src: url("~/assets/fonts/Gotham/Gotham/Gotham-Black.otf") format("oft");
+  --overlayPurple: linear-gradient(
+    to right,
+    color(from var(--purple) srgb r g b / 0.8) 0%,
+    color(from var(--purple) srgb r g b / 0.8) 100%
+  );
+  --overlayGray: linear-gradient(
+    to right,
+    color(from var(--darkgrey) srgb r g b / 0.8) 0%,
+    color(from var(--darkgrey) srgb r g b / 0.8) 100%
+  );
 }
 
 html {

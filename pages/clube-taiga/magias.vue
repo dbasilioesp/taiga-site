@@ -2,6 +2,7 @@
 import { PDFDocument, StandardFonts, rgb, degrees } from "pdf-lib";
 import fontkit from "@pdf-lib/fontkit";
 import truques from "~/utils/magias/truques";
+import nivel1 from "~/utils/magias/nivel1";
 
 const breads = [
   { link: "/clube-taiga", label: "Clube Taiga" },
@@ -9,6 +10,25 @@ const breads = [
 ];
 
 const selectedMagics = ref([]);
+const selectedClass = ref("");
+const classes = [
+  "Barbáro",
+  "Bardo",
+  "Bruxa",
+  "Clériga",
+  "Druida",
+  "Feiticeira",
+  "Guerreiro",
+  "Ladino",
+  "Paladina",
+  "Patrulheiro",
+  "Mago",
+  "Monge",
+];
+const classOptions = [
+  { label: "Todas classes", value: "-" },
+  ...classes.map((item) => ({ label: item, value: item })),
+];
 
 const FONT_SIZES = {
   MINOR: 10,
@@ -54,9 +74,10 @@ async function generatePDF() {
     },
   };
 
-  const magicsFiltered = truques.filter((i) =>
-    selectedMagics.value.includes(i.Titulo)
-  );
+  const magicsFiltered = [
+    ...truques.filter((i) => selectedMagics.value.includes(i.Titulo)),
+    ...nivel1.filter((i) => selectedMagics.value.includes(i.Titulo)),
+  ];
 
   drawPDF(page, pdfDoc, magicsFiltered, FontSet);
 
@@ -180,6 +201,24 @@ function drawPDF(page, pdfDoc, magics, FontSet) {
     page.moveDown(FONT_SIZES.TITLE * 2);
   }
 }
+
+const truquesMap = computed(() => {
+  if (selectedClass.value && selectedClass.value != "-") {
+    return truques.filter((i) => i.Classes.includes(selectedClass.value));
+  }
+
+  return truques;
+});
+
+const nivel1Map = computed(() => {
+  if (selectedClass.value && selectedClass.value != "-") {
+    return nivel1.filter((i) => i.Classes.includes(selectedClass.value));
+  }
+
+  return nivel1;
+});
+
+watch(selectedClass, () => (selectedMagics.value = []));
 </script>
 
 <template>
@@ -190,21 +229,35 @@ function drawPDF(page, pdfDoc, magics, FontSet) {
       <h1>Magias</h1>
 
       <div>
-        <button type="button" class="buttonPrimary" @click="generatePDF">
-          Gerar PDF
-        </button>
+        <div class="filterPanel">
+          <InputSelect
+            v-model="selectedClass"
+            :items="classOptions"
+            placeholder="Filtrar por classe"
+          />
+          <button type="button" class="buttonPrimary" @click="generatePDF">
+            Gerar PDF
+          </button>
+        </div>
 
         <h3 class="magicGroupTitle">Truques</h3>
         <div class="rollGrid" style="--min: 220px; --mt: 20px">
-          <label class="magicCard" v-for="magia in truques" :key="magia.Titulo">
-            <h4 class="magicCard__title">{{ magia.Titulo }}</h4>
-            <input
-              type="checkbox"
-              v-model="selectedMagics"
-              :value="magia.Titulo"
-            />
-            <div class="magicCard__circle"></div>
-          </label>
+          <InputMagicSelect
+            v-for="magia in truquesMap"
+            :key="magia.Titulo"
+            :magia="magia"
+            v-model="selectedMagics"
+          />
+        </div>
+
+        <h3 class="magicGroupTitle">Nivel 1°</h3>
+        <div class="rollGrid" style="--min: 220px; --mt: 20px">
+          <InputMagicSelect
+            v-for="magia in nivel1Map"
+            :key="magia.Titulo"
+            :magia="magia"
+            v-model="selectedMagics"
+          />
         </div>
       </div>
     </section>
@@ -212,42 +265,18 @@ function drawPDF(page, pdfDoc, magics, FontSet) {
 </template>
 
 <style>
+.filterPanel {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  select {
+    width: auto;
+  }
+}
+
 .magicGroupTitle {
   margin-top: 30px;
-}
-.magicCard {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  border-radius: 3px;
-  background-color: gainsboro;
-
-  input {
-    visibility: hidden;
-  }
-
-  &:has(input:checked) {
-    background-color: orange;
-  }
-}
-
-.magicCard__title {
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.magicCard__circle {
-  width: 16px;
-  height: 16px;
-  background-color: white;
-  border: 3px solid dimgray;
-  border-radius: 50%;
-}
-
-.magicCard input:checked + .magicCard__circle {
-  background-color: var(--orange);
-  border-color: orange;
 }
 
 .debug {

@@ -6,7 +6,7 @@ export default [
     Componentes: "S, M",
     Duracao: "Concentração, até 1min",
     Escola: "Encantamento",
-    Classes: "Bardo, Bruxo, Feiticeiro, Mago",
+    Classes: "Bardo, Bruxa, Feiticeira, Mago",
     Descricao:
       "Pela duração, você terá vantagem em todos os testes de Carisma direcionados a uma criatura, à sua escolha, que não seja hostil a você. Quando a magia acabar, a criatura perceberá que você usou magia para influenciar o humor dela, e ficará hostil a você. Uma criatura propensa a violência irá atacar você. Outra criatura pode buscar outras formas de retaliação (a critério do Mestre), dependendo da natureza da sua interação com ela.",
     Material:
@@ -19,7 +19,7 @@ export default [
     Componentes: "S",
     Duracao: "Concentração, até 1 rodada",
     Escola: "Adivinhação",
-    Classes: "Bardo, Bruxa, Feiticeiro, Mago",
+    Classes: "Bardo, Bruxa, Feiticeira, Mago",
     Descricao:
       "Você estende sua mão e aponta o dedo para um alvo no alcance. Sua magia garante a você uma breve intuição sobre as defesas do alvo. No seu próximo turno, você terá vantagem na primeira jogada de ataque contra o alvo, considerando que essa magia não tenha acabado.",
     Material: "",
@@ -43,7 +43,7 @@ export default [
     Componentes: "V, S",
     Duracao: "Instantânea",
     Escola: "Evocação",
-    Classes: "Clérigo",
+    Classes: "Clériga",
     Descricao:
       "Radiação similar a uma chama desce sobre uma criatura que você possa ver, dentro do alcance. O alvo deve ser bem sucedido num teste de resistência de Destreza ou sofrerá 1d8 de dano radiante. O alvo não recebe qualquer benefício de cobertura contra esse teste de resistência.\nO dano da magia aumenta em 1d8 quando você alcança o 5° nível (2d8), 11° nível (3d8) e 17° nível (4d8).",
     Material: "",
@@ -67,7 +67,7 @@ export default [
     Componentes: "V, S, M",
     Duracao: "Instantânea",
     Escola: "Transmutação",
-    Classes: "Bardo, Clérigo, Druida, Feiticeiro, Mago",
+    Classes: "Bardo, Clériga, Druida, Feiticeira, Mago",
     Descricao:
       "Essa magia repara um única quebra ou fissura em um objeto que você tocar, como um elo quebrado de uma corrente, duas metades de uma chave partida, um manto rasgado ou o vazamento em um odre. Contanto que a quebra ou fissura não tenha mais de 30 centímetros em qualquer dimensão, você pode remendá-la, não deixando qualquer vestígio do dano anterior.\n\nEssa magia pode reparar fisicamente um item mágico\nou construto, mas a magia não irá restaurar a magia em tais objetos.",
     Material: "dois imãs",
@@ -103,7 +103,7 @@ export default [
     Componentes: "V, S",
     Duracao: "Instantânea",
     Escola: "Conjuração",
-    Classes: "Feiticeiro, Mago",
+    Classes: "Feiticeira, Mago",
     Descricao:
       "Você arremessa uma bolha de ácido. Escolha uma criatura dentro do alcance, ou escolha duas criaturas dentro do alcance que estejam a 1,5 metro uma da outra. Um alvo deve ser bem sucedido num teste de resistência de Destreza ou sofrerá 1d6 de dano ácido.\n\nO dano dessa magia aumenta em 1d6 quando você alcança o 5° nível (2d6), 11° nível (3d6) e 17° nível (4d6).",
     Material: "",
@@ -115,7 +115,7 @@ export default [
     Componentes: "V, S",
     Duracao: "Instantânea",
     Escola: "Necromancia",
-    Classes: "Clérigo",
+    Classes: "Clériga",
     Descricao:
       "Você toca uma criatura viva que esteja com 0 pontos de vida. A criatura é estabilizada. Essa magia não afeta mortos-vivos ou construtos.",
     Material: "",
@@ -127,7 +127,7 @@ export default [
     Componentes: "V, S, M",
     Duracao: "Concentração, até 1 minuto",
     Escola: "Evocação",
-    Classes: "Bardo, Feiticeiro, Mago",
+    Classes: "Bardo, Feiticeira, Mago",
     Descricao:
       "Você cria até quatro luzes do tamanho de tochas dentro do alcance, fazendo-as parecerem tochas, lanternas ou esferas luminosas que flutuam no ar pela duração. Você também pode combinar as quatro luzes em uma forma luminosa, vagamente humanoide, de tamanho Médio. Qualquer que seja a forma que você escolher, cada luz produz penumbra num raio de 3 metros.\n\nCom uma ação bônus, no seu turno, você pode mover as luzes, até 18 metros, para um novo local dentro do alcance. Uma luz deve estar a, pelo menos, 6 metros de outra luz criada por essa magia e uma luz some se exceder o alcance da magia.",
     Material: "um pouco de fósforo ou wychwood ou um inseto luminoso",
@@ -139,7 +139,7 @@ export default [
     Componentes: "V, M",
     Duracao: "1 minuto",
     Escola: "Ilusão",
-    Classes: "Bardo, Bruxa, Feiticeiro, Mago",
+    Classes: "Bardo, Bruxa, Feiticeira, Mago",
     Descricao:
       "Você cria um som ou uma imagem de um objeto, dentro do alcance, que permanece pela duração. A ilusão também termina se você dissipá-la usando uma ação ou conjurar essa magia novamente.\n\nSe você criar um som, seu volume pode variar entre um sussurro até um grito. Pode ser a sua voz, a voz de outrem, o rugido de um leão, batidas de tambor ou qualquer outro som que você quiser. O som permanece no mesmo volume durante toda duração ou você pode fazer sons distintos em momentos diferentes, antes da magia acabar.\n\nSe você criar uma imagem de um objeto – como uma cadeira, pegadas de lama ou um pequeno baú – ela não pode ter mais de 1,5 metro cúbico. A imagem não pode produzir som, luz, cheiro ou qualquer outro efeito sensorial. Interação física com a imagem revelará que ela é uma ilusão, já que as coisas podem atravessá-la.\n\nSe uma criatura usar sua ação para examinar a imagem, ela pode determinar que ela é uma ilusão se obtiver sucesso num teste de Inteligência (Investigação) contra a CD da magia. Se uma criatura discernir a ilusão como sendo isso, a ilusão se tornará suave para a criatura.",
     Material: "",
@@ -151,7 +151,7 @@ export default [
     Componentes: "V, M",
     Duracao: "Concentração, até 1 hora",
     Escola: "Evocação",
-    Classes: "Clérigo, Feiticeiro, Mago",
+    Classes: "Clériga, Feiticeira, Mago",
     Descricao:
       "Você toca um objeto que não tenha mais 3 metros em qualquer dimensão. Até a magia acabar, o objeto emite luz plena num raio de 6 metros e penumbra por 6 metros adicionais. Cobrir o objeto completamente com alguma coisa opaca bloqueará a luz. A magia termina se você conjurá-la novamente ou dissipá-la com uma ação.\n\nSe você tentar afetar um objeto segurado ou vestido por uma criatura hostil, a criatura deve ser bem sucedida num teste de Destreza para evitar a magia.\n",
     Material: "um vaga-lume ou musgo fosforescente.",
@@ -163,7 +163,7 @@ export default [
     Componentes: "V, S",
     Duracao: "1 minuto",
     Escola: "Conjuração",
-    Classes: "Bardo, Bruxa, Feiticeiro, Mago",
+    Classes: "Bardo, Bruxa, Feiticeira, Mago",
     Descricao:
       "Uma mão espectral flutuante aparece num ponto, à sua escolha, dentro do alcance. A mão permanece pela duração ou até você dissipá-la com uma ação. A mão some se estiver a mais de 9 metros de você ou se você conjurar essa magia novamente.\n\nVocê pode usar sua ação para controlar a mão. Você pode usar a mão para manipular um objeto, abrir uma porta ou recipiente destrancado, guardar ou pegar um item de um recipiente aberto ou derramar o conteúdo de um frasco. Você pode mover a mão até 9 metros a cada vez que a usa.\n\nA mão não pode atacar, ativar itens mágicos ou carregar mais de 5 quilos.",
     Material: "",
@@ -175,7 +175,7 @@ export default [
     Componentes: "V, S, M",
     Duracao: "1 rodada",
     Escola: "Transmutação",
-    Classes: "Bardo, Feiticeiro, Mago",
+    Classes: "Bardo, Feiticeira, Mago",
     Descricao:
       "Você aponta seu dedo para uma criatura dentro do alcance e sussurra uma mensagem. O alvo (e apenas ele) ouvi a mensagem e pode responder com um sussurro que apenas você pode ouvir.\n\nVocê pode conjurar essa magia através de objetos sólidos se você tiver familiaridade com o alvo. Silêncio mágico, 30 centímetros de rocha, 2,5 centímetros de metal comum, uma fina camada de chumbo, ou 90 centímetros de madeira ou terra bloqueiam a magia. A magia não precisa seguir uma linha reta e pode viajar livremente, dobrando esquinas ou através de aberturas.",
     Material: "um pedaço curto de fio de cobre.",
@@ -187,7 +187,7 @@ export default [
     Componentes: "V, S",
     Duracao: "Concentração, até 1 minuto",
     Escola: "Adivinhação",
-    Classes: "Clérigo, Druida",
+    Classes: "Clériga, Druida",
     Descricao:
       "Você toca uma criatura voluntária. Uma vez, antes da magia acabar, o alvo pode rolar um d4 e adicionar o número rolado a um teste de habilidade a escolha dele. Ele pode rolar o dado antes ou depois de realizar o teste de habilidade. Após isso, a magia termina.",
     Material: "",
@@ -199,7 +199,7 @@ export default [
     Componentes: "V, S",
     Duracao: "Até 1 hora",
     Escola: "Transmutação",
-    Classes: "Bardo, Bruxa, Feiticeiro, Mago",
+    Classes: "Bardo, Bruxa, Feiticeira, Mago",
     Descricao:
       "Essa magia é um truque mágico simples que conjuradores iniciantes usam para praticar. Você cria um dos seguintes efeitos mágicos dentro do alcance:\n\n--- Você cria, instantaneamente, um efeito sensorial inofensivo, como uma chuva de faíscas, um sopro de vento, notas musicais suaves ou um odor estranho.\n\n--- Você, instantaneamente, acende ou apaga uma vela uma tocha ou uma pequena fogueira.\n\n--- Você, instantaneamente, limpa ou suja um objeto de\naté 1 metro cúbico.\n\n--- Você esfria, esquenta ou melhora o sabor de até 1 metro cubico de matéria inorgânica por 1 hora.\n\n--- Você faz uma cor, uma pequena marca ou um símbolo aparecer em um objeto ou superfície por 1 hora.\n\n--- Você cria uma bugiganga não-mágica ou uma imagem ilusória que caiba na sua mão e que dura até o final do seu próximo turno.\n\nSe você conjurar essa magia diversas vezes, você pode ter até três dos seus efeitos não instantâneos ativos, ao mesmo tempo, e você pode dissipar um desses efeitos com uma ação.\n",
     Material: "",
@@ -211,7 +211,7 @@ export default [
     Componentes: "V, S",
     Duracao: "Concentração, até 1 hora",
     Escola: "Abjuração",
-    Classes: "Bardo, Bruxa, Feiticeiro, Mago",
+    Classes: "Bardo, Bruxa, Feiticeira, Mago",
     Descricao:
       "Você estende suas mãos e desenha um símbolo de proteção no ar. Até o final do seu próximo turno, você terá resistência contra dano de concussão, cortante e perfurante causado por ataques com armas.",
     Material: "",
@@ -223,7 +223,7 @@ export default [
     Componentes: "V, S",
     Duracao: "Instantânea",
     Escola: "Evocação",
-    Classes: "Feiticeiro, Mago",
+    Classes: "Feiticeira, Mago",
     Descricao:
       "Você arremessa um cisco de fogo em uma criatura ou objeto dentro do alcance. Faça um ataque à distância com magia contra o alvo. Se atingir, o alvo sofre 1d10 de dano de fogo. Um objeto inflamável atingido por essa magia, incendeia se não estiver sendo vestido ou carregado.\n\nO dano dessa magia aumenta em 1d10 quando você alcança o 5° nível (2d10), 11° nível (3d10) e 17° nível (4d10).",
     Material: "",
@@ -235,7 +235,7 @@ export default [
     Componentes: "V, S",
     Duracao: "Instantânea",
     Escola: "Evocação",
-    Classes: "Feiticeiro, Mago",
+    Classes: "Feiticeira, Mago",
     Descricao:
       "Um raio frigido de luz azul clara parte em direção de uma criatura, dentro do alcance. Realize um ataque à distância com magia contra o alvo. Se atingir, ele sofre 1d8 de dano de frio e seu deslocamento é reduzido em 3 metros até o começo do seu próximo turno.\n\nO dano da magia aumenta em 1d8 quando você alcança o 5° nível (2d8), 11° nível (3d8) e 17° nível (4d8).",
     Material: "",
@@ -247,7 +247,7 @@ export default [
     Componentes: "V, S",
     Duracao: "Instantânea",
     Escola: "Conjuração",
-    Classes: "Bruxa, Druida, Feiticeiro, Mago",
+    Classes: "Bruxa, Druida, Feiticeira, Mago",
     Descricao:
       "Você ergue sua mão em direção de uma criatura que você possa ver, dentro do alcance e projeta um sopro de gás tóxico da sua palma. A criatura deve ser bem sucedida num teste de resistência de Constituição ou sofrerá 1d12 de dano de veneno.\n\nO dano dessa magia aumenta em 1d12 quando você alcança o 5° nível (2d12), 11° nível (3d12) e 17° nível (4d12).",
     Material: "",
@@ -271,7 +271,7 @@ export default [
     Componentes: "V, S, M",
     Duracao: "Concentração, até 1 minuto",
     Escola: "Abjuração",
-    Classes: "Clérigo, Druida",
+    Classes: "Clériga, Druida",
     Descricao:
       "Você toca uma criatura voluntária. Uma vez, antes da magia acabar, o alvo pode rolar um d4 e adicionar o valor jogado a um teste de resistência de sua escolha. Ele pode rolar o dado antes ou depois de realizar o teste de resistência. Então, a magia termina.",
     Material: "um manto em miniatura.",
@@ -283,7 +283,7 @@ export default [
     Componentes: "V",
     Duracao: "Até 1 minuto",
     Escola: "Transmutação",
-    Classes: "Clérigo",
+    Classes: "Clériga",
     Descricao:
       "Você manifesta pequenas maravilhas, um sinal de poder sobrenatural, dentro do alcance. Você cria um dos seguintes efeitos mágicos dentro do alcance:\n\n--- Sua voz ressoa com o triplo do volume normal por 1 minuto.\n\n--- Você provoca tremores inofensivos no solo por 1 minuto.\n\n--- Você cria, instantaneamente, um som que se origina de um ponto, à sua escolha, dentro do alcance, como o barulho de um trovão, o gralhar de um corvo ou sussurros sinistros.\n\n--- Você, instantaneamente, faz uma porta ou janela destrancada se abrir ou se fechar.\n\n--- Você altera a aparência dos seus olhos por 1 minuto\n\nSe você conjurar essa magia diversas vezes, você pode ter até três dos efeitos de 1 minuto ativos por vez, e você pode dissipar um desses efeitos com uma ação.",
     Material: "",
@@ -295,7 +295,7 @@ export default [
     Componentes: "V, S",
     Duracao: "1 rodada",
     Escola: "Necromancia",
-    Classes: "Bruxa, Feiticeiro, Mago",
+    Classes: "Bruxa, Feiticeira, Mago",
     Descricao:
       "Você cria uma mão esquelética fantasmagórica no espaço de uma criatura, dentro do alcance. Realize um ataque à distância com magia contra a criatura para afetá-la com o frio sepulcral. Se atingir, a criatura sofre 1d8 de dano necrótico e não poderá recuperar pontos de vida até o início do seu próximo turno. Até lá, a mão ficará presa ao alvo.\n\nSe você atingir um alvo morto-vivo, ele terá desvantagem nas jogadas de ataque contra você até o final do seu próximo turno.\n\nO dano dessa magia aumenta em 1d8 quando você alcança o 5° nível (2d8), 11° nível (3d8) e 17° nível (4d8).",
     Material: "",
@@ -307,7 +307,7 @@ export default [
     Componentes: "V, S",
     Duracao: "Instantânea",
     Escola: "Evocação",
-    Classes: "Feiticeiro, Mago",
+    Classes: "Feiticeira, Mago",
     Descricao:
       "Eletricidade surge da sua mão para transmitir um choque em uma criatura que você tentar tocar. Faça um ataque corpo-a-corpo com magia contra o alvo. Você tem vantagem na jogada de ataque se o alvo estiver vestindo qualquer armadura de metal. Se atingir, o alvo sofre 1d8 de dano elétrico e não pode usar reações até o início do próximo turno dele.\n\nO dano da magia aumenta em 1d8 quando você alcança o 5° nível (2d8), 11° nível (3d8) e 17° nível (4d8).",
     Material: "",

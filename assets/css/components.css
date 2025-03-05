@@ -14,10 +14,10 @@
   justify-content: center;
   background-color: var(--yellow);
   color: white;
-  height: 50px;
+  height: 40px;
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
@@ -25,7 +25,8 @@
   transition: all 0.3s ease;
   padding: 0 20px;
   font-family: var(--fontTitle);
-  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
 }
 
 .buttonPrimary:hover {
@@ -35,6 +36,11 @@
 .buttonPrimary.is-black {
   background-color: #030712;
   color: white;
+}
+
+.buttonPrimary.isBig {
+  height: 50px;
+  font-size: 18px;
 }
 
 /* Box */

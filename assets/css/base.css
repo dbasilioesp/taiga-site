@@ -38,8 +38,16 @@ html {
   font-family: var(--fontText);
 }
 
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
 figcaption {
   font-size: 0.8rem;
   margin-top: 5px;
   opacity: 0.5;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(2px);
 }

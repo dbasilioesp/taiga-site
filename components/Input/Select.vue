@@ -102,11 +102,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div
-    class="select"
-    :class="[size, { input_blocked: disabled, opened }]"
-    ref="el"
-  >
+  <div class="select" :class="[{ input_blocked: disabled, opened }]" ref="el">
     <div class="select__button">
       <input
         v-if="queryable"

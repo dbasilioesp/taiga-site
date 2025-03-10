@@ -12,18 +12,18 @@ const breads = [
 const selectedMagics = ref([]);
 const selectedClass = ref("");
 const classes = [
-  "Barbáro",
+  // "Barbáro",
   "Bardo",
   "Bruxa",
   "Clériga",
   "Druida",
   "Feiticeira",
-  "Guerreiro",
+  // "Guerreiro",
   "Ladino",
   "Paladina",
   "Patrulheiro",
   "Mago",
-  "Monge",
+  // "Monge",
 ];
 const classOptions = [
   { label: "Todas classes", value: "-" },
@@ -202,23 +202,31 @@ function drawPDF(page, pdfDoc, magics, FontSet) {
   }
 }
 
-const truquesMap = computed(() => {
+const allMagics = computed(() => {
+  let truquesFil = truques;
+  let nivel1Fil = nivel1;
+
   if (selectedClass.value && selectedClass.value != "-") {
-    return truques.filter((i) => i.Classes.includes(selectedClass.value));
+    const fnFilter = (i) => i.Classes.includes(selectedClass.value);
+    truquesFil = truques.filter(fnFilter);
+    nivel1Fil = nivel1.filter(fnFilter);
   }
 
-  return truques;
+  const fnSelected = (i) => selectedMagics.value.includes(i.Titulo);
+
+  return [
+    {
+      title: "Truques",
+      magics: truquesFil,
+      selecteds: truques.filter(fnSelected),
+    },
+    {
+      title: "Nivel 1°",
+      magics: nivel1Fil,
+      selecteds: nivel1.filter(fnSelected),
+    },
+  ];
 });
-
-const nivel1Map = computed(() => {
-  if (selectedClass.value && selectedClass.value != "-") {
-    return nivel1.filter((i) => i.Classes.includes(selectedClass.value));
-  }
-
-  return nivel1;
-});
-
-watch(selectedClass, () => (selectedMagics.value = []));
 </script>
 
 <template>
@@ -229,54 +237,161 @@ watch(selectedClass, () => (selectedMagics.value = []));
       <h1>Magias</h1>
 
       <div>
-        <div class="filterPanel">
+        <div class="page__filterPanel">
           <InputSelect
             v-model="selectedClass"
             :items="classOptions"
             placeholder="Filtrar por classe"
           />
-          <button type="button" class="buttonPrimary" @click="generatePDF">
+          <button type="button" class="button" @click="generatePDF">
             Gerar PDF
+          </button>
+          <button
+            type="button"
+            class="page__buttonSelecteds button isOutline"
+            onclick="magicsSidebar.showModal()"
+          >
+            Ver Selecionados
           </button>
         </div>
 
-        <h3 class="magicGroupTitle">Truques</h3>
-        <div class="rollGrid" style="--min: 220px; --mt: 20px">
-          <InputMagicSelect
-            v-for="magia in truquesMap"
-            :key="magia.Titulo"
-            :magia="magia"
-            v-model="selectedMagics"
-          />
-        </div>
+        <div class="magicsGrid">
+          <div class="magicsList">
+            <UIMagicList
+              :label="magicNivel.title"
+              v-model="selectedMagics"
+              :magics="magicNivel.magics"
+              v-for="magicNivel in allMagics"
+              :key="magicNivel.label"
+            />
+          </div>
 
-        <h3 class="magicGroupTitle">Nivel 1°</h3>
-        <div class="rollGrid" style="--min: 220px; --mt: 20px">
-          <InputMagicSelect
-            v-for="magia in nivel1Map"
-            :key="magia.Titulo"
-            :magia="magia"
-            v-model="selectedMagics"
-          />
+          <dialog id="magicsSidebar" class="magicsSidebar">
+            <button
+              class="magicsSidebar__buttonClose"
+              type="button"
+              onclick="magicsSidebar.close()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+            <div class="magicsSidebar__wrap">
+              <h2>Selecionados:</h2>
+              <template v-for="magicNivel in allMagics" :key="magicNivel.label">
+                <div v-if="magicNivel.selecteds.length > 0">
+                  <h3>{{ magicNivel.title }}</h3>
+                  <div
+                    v-for="magic in magicNivel.selecteds"
+                    :key="magic.Titulo"
+                  >
+                    {{ magic.Titulo }}
+                  </div>
+                </div>
+              </template>
+            </div>
+          </dialog>
         </div>
       </div>
     </section>
   </UIPageContainer>
 </template>
 
-<style>
-.filterPanel {
+<style scoped>
+.page__filterPanel {
   display: flex;
   gap: 20px;
   align-items: center;
+  flex-wrap: wrap;
 
   select {
     width: auto;
   }
 }
 
-.magicGroupTitle {
-  margin-top: 30px;
+.page__buttonSelecteds {
+  @media (min-width: 601px) {
+    display: none;
+  }
+}
+
+.magicsGrid {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  gap: 20px;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.magicsSidebar {
+  border-radius: 4px;
+  background-color: #2a3140;
+  color: white;
+  max-height: 600px;
+  padding: 10px 2px 0 10px;
+
+  h2 {
+    margin-inline: 0;
+    margin-block: 4px;
+  }
+
+  &[open] {
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    height: 100%;
+    max-width: 400px;
+    width: 100%;
+    padding: 16px 2px 0 20px;
+
+    @media (max-width: 420px) {
+      max-width: 100%;
+      max-height: 100%;
+      width: calc(100% - 60px);
+      height: calc(100% - 60px);
+    }
+  }
+
+  @media (min-width: 601px) {
+    position: static;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.magicsSidebar__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+
+  overflow: auto;
+  /* max-height: 100%; */
+  scrollbar-width: thin;
+  scrollbar-color: white #2a3140;
+}
+
+.magicsSidebar__buttonClose {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: none;
+  border: 0;
 }
 
 .debug {

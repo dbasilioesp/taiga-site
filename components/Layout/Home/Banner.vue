@@ -11,9 +11,7 @@
           Somos uma livraria que procura inspirar a nova juventude, escolhendo
           títulos inovadores e que conversem com os novos tempos.
         </p>
-        <RouterLink to="/catalogo" class="buttonPrimary is-black"
-          >Veja mais</RouterLink
-        >
+        <RouterLink to="/catalogo" class="button isBlack">Veja mais</RouterLink>
       </div>
       <figure>
         <img class="banner__img bidImage" src="~/assets/images/bib4.jpg" />
